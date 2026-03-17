@@ -50,7 +50,7 @@ Abaixo estão as funcionalidades escritas sob a perspecitiva do usuário final, 
 
 ### 📝 Épico 3: Cadastro Manual de Jogos
 
-- **US08 - Validação de Formulário:** Como um Usuário, quero receber feedback ao preencher o formulário incorretamente, para corrigir erros antes de enviar.
+- **US07 - Validação de Formulário:** Como um Usuário, quero receber feedback ao preencher o formulário incorretamente, para corrigir erros antes de enviar.
 
   - _Critérios de Aceitação:_ Deve validar campos obrigatórios; utilizar validação HTML e JavaScript; exibir mensagens de erro.
 
