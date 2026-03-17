@@ -38,15 +38,15 @@ Abaixo estão as funcionalidades escritas sob a perspecitiva do usuário final, 
 
 - **US04 - Adicionar aos Favoritos:** Como um Usuário, quero adicionar jogos à minha biblioteca pessoal, para organizar os jogos que gosto.
 
-  - _Critérios de Aceitação:_ O jogo deve ser salvo no localStorage; não deve permitir duplicatas.
+  - _Critérios de Aceitação:_ O jogo deve ser salvo no JSON Server; não deve permitir duplicatas.
 
 - **US05 - Listar Biblioteca:** Como um Usuário, quero visualizar minha lista de jogos salvos, para acompanhar minha coleção.
 
-  - _Critérios de Aceitação:_ Os dados devem ser carregados do localStorage; a listagem deve ser exibida em formato de cards ou tabela.
+  - _Critérios de Aceitação:_ Os dados devem ser carregados do JSON Server; a listagem deve ser exibida em formato de cards ou tabela.
 
 - **US06 - Remover Jogo:** Como um Usuário, quero remover jogos da minha biblioteca, para manter minha lista atualizada.
 
-  - _Critérios de Aceitação:_ O item deve ser removido do localStorage e da interface imediatamente.
+  - _Critérios de Aceitação:_ O item deve ser removido do JSON Server e da interface imediatamente.
 
 ### 📝 Épico 3: Cadastro Manual de Jogos
 
