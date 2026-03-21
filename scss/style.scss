@@ -1,0 +1,21 @@
+$primary: #cacaca;
+$secondary:#b3b3b3;
+$body-bg: #0b0b0b;
+$body-color: #e5e5e5;
+$warning: #ba78f8;
+
+
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background-color: hsla(0, 0%, 5%, 0.95);
+}
+
+.bg-w-img {
+  background:
+    linear-gradient(rgba(14, 14, 14, 0.7), rgba(14, 14, 14, 0.7)),
+    url('../assets/images/login_background--test.png');
+
+  background-size: cover;
+  background-position: center;
+}

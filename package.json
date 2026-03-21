@@ -1,0 +1,19 @@
+{
+  "name": "game-vault",
+  "version": "1.0.0",
+  "description": "Desenvolver uma aplicação web responsiva que permita ao usuário buscar jogos em uma API pública e gerenciar uma lista personalizada de jogos, incluindo funcionalidades de cadastro, listagem e visualização de detalhes.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "sass": "^1.98.0"
+  }
+}
