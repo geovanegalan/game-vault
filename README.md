@@ -18,7 +18,14 @@ Em Andamento
 
 ## 💻 Tecnologias e Dependências
 
-Em andamento 
+- Framework CSS: Bootstrap  
+- API Pública: RAWG Video Games Database API  
+
+### 💡 Justificativa
+
+O Bootstrap foi escolhido por ser um framework CSS amplamente utilizado, com excelente suporte à responsividade e uma grande variedade de componentes prontos, como cards, botões e modais. Isso permite acelerar o desenvolvimento da interface e garantir consistência visual entre as páginas da aplicação.
+
+A RAWG Video Games Database API foi selecionada por fornecer uma base rica de dados sobre jogos, incluindo nome, descrição, imagens e avaliações. Essa API agrega valor ao sistema ao permitir a exibição dinâmica de jogos, tornando a aplicação mais interativa e próxima de um sistema real.
 
 ## ✅ Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
