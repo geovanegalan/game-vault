@@ -76,3 +76,10 @@ Representa os jogos favoritados pelos usuários, funcionando como uma entidade d
 - userId: ID do usuário que favoritou o jogo.
 - gameId: ID do jogo favoritado.
 - createdAt: Data em que o jogo foi adicionado aos favoritos.
+
+## 2. Especificação Técnica
+
+Versões das tecnologias escolhidas.
+
+- Bootstrap v5.3.8
+- API Pública: RAWG Video Games Database API v1.0 

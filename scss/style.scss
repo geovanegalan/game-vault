@@ -2,20 +2,53 @@ $primary: #cacaca;
 $secondary:#b3b3b3;
 $body-bg: #0b0b0b;
 $body-color: #e5e5e5;
-$warning: #ba78f8;
+$warning: #edb1ff;
+$light: #8d8d8dd3;
+$form-check-input-checked-bg-color: #edb1ff;
+$form-check-input-checked-border-color: #edb1ff;
 
 
-@import "bootstrap/scss/bootstrap";
+$font-sizes: (
+  1: 2.5rem,
+  2: 1.8rem,
+  3: 1.5rem,
+  4: 1.3rem,
+  5: 1.1rem,
+  6: 0.80rem
+);
+
+// PADRÃO BOOTSTRAP
+// $font-sizes: (
+//   1: 2.5rem,
+//   2: 2rem,
+//   3: 1.75rem,
+//   4: 1.5rem,
+//   5: 1.25rem,
+//   6: 1rem
+// );
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
-  background-color: hsla(0, 0%, 5%, 0.95);
+  background-color:  #0b0b0b;
 }
 
 .bg-w-img {
   background:
-    linear-gradient(rgba(14, 14, 14, 0.7), rgba(14, 14, 14, 0.7)),
-    url('../assets/images/login_background--test.png');
+    linear-gradient(rgb(11, 11, 11), rgba(14, 14, 14, 0.7), rgb(11, 11, 11)),
+    url('../assets/images/bg.png');
 
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+}
+
+.bg-create-acc{
+  width: 300px;
+}
+.form-control::placeholder {
+  color: #777;
+}
+
+.form-control:focus::placeholder {
+  color: #aaa;
 }
