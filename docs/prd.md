@@ -18,7 +18,7 @@ Dessa forma, surge a necessidade de uma aplicação que permita ao usuário cons
 
 ## 3. Histórias de Usuário e Escopo 
 
-Abaixo estão as funcionalidades escritas sob a perspecitiva do usuário final, que joga videogames e deseja organizar sua biblioteca pessoal de jogos, acompanhar seu progresso ou descobrir novos títulos.
+Abaixo estão as funcionalidades escritas sob a perspectiva do usuário final, que joga videogames e deseja organizar sua biblioteca pessoal de jogos, acompanhar seu progresso ou descobrir novos títulos.
 
 ### 🎮 Épico 1: Exploração de Jogos
 

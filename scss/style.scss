@@ -1,12 +1,20 @@
-$primary: #cacaca;
-$secondary:#b3b3b3;
-$body-bg: #0b0b0b;
-$body-color: #e5e5e5;
-$warning: #edb1ff;
-$light: #8d8d8dd3;
-$form-check-input-checked-bg-color: #edb1ff;
-$form-check-input-checked-border-color: #edb1ff;
+$theme-colors: (
+  "primary": #0d6efd,
+  "secondary": #6c757d,
+  "success": #198754,
+  "danger": #dc3545,
+  "warning": #ffc107,
+  "info": #0dcaf0,
+  "light": #f8f9fa,
+  "dark": #212529,
 
+  "midnight": #09090d,
+  "ultraviolet": #9d50bb,
+  "secondary-ultraviolet": #b96cd8,
+  "black-containers": #12121a,
+  "primary-vault": #ffffff,
+  "secondary-vault": #acabaa,
+);
 
 $font-sizes: (
   1: 2.5rem,
@@ -14,7 +22,7 @@ $font-sizes: (
   3: 1.5rem,
   4: 1.3rem,
   5: 1.1rem,
-  6: 0.80rem
+  6: 0.8rem,
 );
 
 // PADRÃO BOOTSTRAP
@@ -27,16 +35,22 @@ $font-sizes: (
 //   6: 1rem
 // );
 
+
+
+@import "mixins";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-body {
-  background-color:  #0b0b0b;
+.btn-primary-ultraviolet {
+  @include button(map-get($theme-colors, ultraviolet), map-get($theme-colors, secondary-ultraviolet));
 }
 
+body {
+  background-color: map-get($theme-colors, "midnight");
+}
 .bg-w-img {
   background:
-    linear-gradient(rgb(11, 11, 11), rgba(14, 14, 14, 0.7), rgb(11, 11, 11)),
-    url('../assets/images/bg.png');
+    linear-gradient(rgb(11, 11, 11), rgba(9, 9, 13, 0.7), rgb(11, 11, 11)),
+    url("../assets/images/bg.png");
 
   background-size: cover;
   background-position: center center;
@@ -45,10 +59,21 @@ body {
 .bg-create-acc{
   width: 300px;
 }
-.form-control::placeholder {
-  color: #777;
+
+.form-control {
+  background-color: map-get($theme-colors, "secondary-vault");
+  border: 1px solid map-get($theme-colors, "secondary-vault");
+  color: #e7e5e4;
+  padding: 0.75rem 1rem;
 }
 
-.form-control:focus::placeholder {
-  color: #aaa;
+.form-control:focus {
+  border-color: map-get($theme-colors, "ultraviolet");
+  box-shadow: 0 0 0 0.2rem rgba(157, 80, 187, 0.25);
+}
+
+
+.form-check-input:checked {
+  background-color: map-get($theme-colors, "ultraviolet");
+  border-color: map-get($theme-colors, "ultraviolet");
 }
