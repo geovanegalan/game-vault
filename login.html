@@ -3,143 +3,87 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Join your Vault</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css">
+    <title>Game Vault - Secure Login</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div class="container d-flex flex-column min-vh-100">
-      <div class="row flex-grow-1 g-">
+  <body class="bg-auth">
+    <div
+      class="container d-flex flex-column min-vh-100 align-items-center justify-content-center"
+    >
+      <div class="row w-100 justify-content-center">
         <div
-          class="col-12 col-md-12 col-lg-7 text-white bg-light bg-w-img d-flex flex-column justify-content-between p-5 d-none d-md-flex"
+          class="col-12 col-md-12 col-lg-4 d-flex flex-column align-items-center bg-grey-container p-5"
         >
-          <div class="d-flex flex-column gap-4 align-items-start">
-            <img src="assets/images/logo_v2.png" class="bg-create-acc" alt="#" />
-            <h1 class="fw-bold lh-sm mt-5">
-              Curation for the <br class="d-none d-md-block" /><span
-                class="text-ultraviolet"
-                >Discerning</span
-              >
-              Gamer.
-            </h1>
-            <p class="text-secondary-vault fs-5 w-50">
-              Escape the noise of modern storefronts. Your collection is a
-              gallery, treat it like one. Archive, organize, and showcase your
-              digital artifacts in the premier private vault.
-            </p>
-          </div>
-          <div>
-            <div class="d-flex flex-row justify-content-evenly gap-5">
-              <div>
-                <h3 class="text-uppercase fs-5 text-ultraviolet fw-bold">zero clutter</h3>
-                <p class="text-secondary-vault fs-6">
-                  A minimalist interface that puts your game art from and
-                  center.
-                </p>
-              </div>
-              <div>
-                <h3 class="text-uppercase fs-5 text-ultraviolet fw-bold">
-                  private gallery
-                </h3>
-                <p class="text-secondary-vault fs-6">
-                  Your statistics and library remain exclusively under your
-                  control.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div
-          class="col-12 col-md-12 col-lg-5 d-flex flex-column justify-content-center gap-5 p-5"
-        >
-          <div>
-            <h2 class="fw-bold fs-1 text-primary-vault">Establish Identity</h2>
-            <p class="text-secondary-vault">Secure your place in the vault. All fields are required.</p>
-          </div>
-          <form action="#">
-            <div class="row g-3">
-              <div class="col-12 col-md-6">
-                <label for="" class="form-label text-uppercase fs-6 fw-bold text-secondary-vault"
-                  >Gamer Tag
+          <img
+            src="./assets/images/logo_v2.png"
+            alt="Game Vault logo"
+            class="logo"
+          />
+          <form action="#" class="d-flex flex-column mt-5 mb-5">
+            <div class="row g-4">
+              <div class="col-12">
+                <label
+                  class="form-label text-uppercase fs-6 fw-bold text-secondary-vault"
+                >
+                  Credentials
                 </label>
                 <input
                   type="text"
-                  name="user-nick"
-                  id="#"
                   class="form-control bg-black text-primary-vault border-black-containers"
-                  placeholder="e.g. KavooKavala"
+                  placeholder="Username or E-mail"
                 />
               </div>
-              <div class="col-12 col-md-6">
+              <div class="col-12">
                 <label
                   for=""
-                  class="form-label text-uppercase fs-6 fw-bold  text-secondary-vault"
+                  class="form-label text-uppercase fs-6 fw-bold text-secondary-vault"
                 >
-                  Full Name
+                  Password
                 </label>
+                <small class="text-ultraviolet fw-bold text-uppercase fs-6"
+                  >Forgot password?</small
+                >
                 <input
-                  type="text"
-                  name=""
-                  id=""
+                  type="password"
+                  name="#"
+                  id="#"
                   class="form-control bg-black text-primary-vault border-black-containers"
-                  placeholder="John Winchester"
+                  placeholder="**********"
                 />
               </div>
-            </div>
-            <div class="mt-3">
-              <label class="form-label text-uppercase fs-6 fw-bold text-secondary-vault">
-                Email Address
-              </label>
-              <input
-                type="email"
-                class="form-control bg-black text-primary-vaultd border-black-containers"
-                placeholder="lcs@vault.com"
-              />
-            </div>
-            <div class="mt-3">
-              <div class="d-flex justify-content-between">
-                <label class="form-label text-uppercase fs-6 fw-bold text-secondary-vault">
-                  Access Key
-                </label>
-                <small class="text-secondary-vault text-uppercase fs-6">Min. 12 characters</small>
+              <div class=" d-flex align-items-center justify-content-around">
+                <div class="form-check">
+                    <input
+                      type="checkbox"
+                      name="#"
+                      id="#"
+                      class="form-check-input"
+                    />
+                    <label for="#" class="form-check-label text-secondary-vault"
+                      >Maintain Session</label
+                    >
+                </div>
+                <small class="fs-6 text-ultraviolet fw-bold text-uppercase">Forgot password?</small>
               </div>
-              <input
-                type="password"
-                class="form-control bg-black text-primary-vault border-black-containers"  placeholder="••••••••••••"
-              />
+              </div>
+              <button class="btn btn-primary-ultraviolet">Enter</button>
+            </form>
+                <p> New artifact curator?</p>
+                <button class="btn border-1 bg-transparent">
+                  Request Credentials
+                </button>
+              </div>
             </div>
-            <div class="form-check mt-3">
-              <input class="form-check-input" type="checkbox" />
-              <label class="form-check-label text-secondary-vault small">
-                I acknowledge the
-                <a class="text-ultraviolet">Vault Protocols</a> and agree to
-                the terms.
-              </label>
-            </div>
-            <button
-              class="btn btn-primary-ultraviolet" 
-            >
-              Create Account
-            </button>
-            <p class="text-center text-secondary-vault mt-3 small">
-              Already a curator?
-              <a href="#" class="text-ultraviolet text-decoration-none">Sign In</a>
-            </p>
-          </form>
         </div>
       </div>
-      <footer
-        class="d-flex flex-column flex-md-row justify-content-around align-items-center text-secondary gap-3 py-3"
-      >
-        <p class="mb-0 text-center text-md-start text-secondary-vault fs-6">
-          &copy; 2026 GameVault. All Systems Operational.
-        </p>
-        <div class="d-flex gap-3">
-          <a href="#" class="text-secondary-vault text-decoration link-underline-ultraviolet fs-6">Legal</a>
-          <a href="#" class="text-secondary-vault text-decoration link-underline-ultraviolet fs-6">Privacy Policy</a>
-          <a href="#" class="text-secondary-vault text-decoration link-underline-ultraviolet fs-6">API Docs</a>
-        </div>
-      </footer>
     </div>
   </body>
 </html>
