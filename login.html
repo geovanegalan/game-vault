@@ -1,89 +1,105 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Game Vault - Secure Login</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-auth">
-    <div
-      class="container d-flex flex-column min-vh-100 align-items-center justify-content-center"
-    >
-      <div class="row w-100 justify-content-center">
-        <div
-          class="col-12 col-md-12 col-lg-4 d-flex flex-column align-items-center bg-grey-container p-5"
-        >
-          <img
-            src="./assets/images/logo_v2.png"
-            alt="Game Vault logo"
-            class="logo"
-          />
-          <form action="#" class="d-flex flex-column mt-5 mb-5">
-            <div class="row g-4">
-              <div class="col-12">
-                <label
-                  class="form-label text-uppercase fs-6 fw-bold text-secondary-vault"
-                >
-                  Credentials
-                </label>
-                <input
-                  type="text"
-                  class="form-control bg-black text-primary-vault border-black-containers"
-                  placeholder="Username or E-mail"
-                />
-              </div>
-              <div class="col-12">
-                <label
-                  for=""
-                  class="form-label text-uppercase fs-6 fw-bold text-secondary-vault"
-                >
-                  Password
-                </label>
-                <small class="text-ultraviolet fw-bold text-uppercase fs-6"
-                  >Forgot password?</small
-                >
-                <input
-                  type="password"
-                  name="#"
-                  id="#"
-                  class="form-control bg-black text-primary-vault border-black-containers"
-                  placeholder="**********"
-                />
-              </div>
-              <div class=" d-flex align-items-center justify-content-around">
-                <div class="form-check">
-                    <input
-                      type="checkbox"
-                      name="#"
-                      id="#"
-                      class="form-check-input"
-                    />
-                    <label for="#" class="form-check-label text-secondary-vault"
-                      >Maintain Session</label
-                    >
-                </div>
-                <small class="fs-6 text-ultraviolet fw-bold text-uppercase">Forgot password?</small>
-              </div>
-              </div>
-              <button class="btn btn-primary-ultraviolet">Enter</button>
-            </form>
-                <p> New artifact curator?</p>
-                <button class="btn border-1 bg-transparent">
-                  Request Credentials
-                </button>
-              </div>
-            </div>
-        </div>
-      </div>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Game Vault - Secure Login</title>
+
+		<link rel="stylesheet" href="css/style.css" />
+
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body class="bg-auth">
+		<div class="min-vh-100 d-flex align-items-center justify-content-center">
+			<div class="row w-100 justify-content-center">
+				<div style="max-width: 420px">
+					<div
+						class="d-flex flex-column align-items-center bg-grey-container p-5 rounded-4 shadow-sm"
+					>
+						<img
+							src="./assets/images/logo_v2.png"
+							alt="Game Vault logo"
+							class="logo"
+						/>
+						<form action="#" class="w-100 d-flex flex-column gap-4 mt-5 mb-4">
+							<div>
+								<label
+									for="email"
+									class="form-label text-uppercase fs-6 fw-bold text-secondary-vault"
+								>
+									Credentials
+								</label>
+								<input
+									type="text"
+									id="email"
+									name="email"
+									class="form-control bg-black text-primary-vault border-black-containers"
+									placeholder="Username or E-mail"
+								/>
+							</div>
+							<div>
+								<div class="d-flex justify-content-between">
+									<label
+										for="password"
+										class="form-label text-uppercase fs-6 fw-bold text-secondary-vault"
+									>
+										Password
+									</label>
+
+									<a
+										href="#"
+										class="text-ultraviolet fw-bold text-uppercase fs-6 text-decoration-none"
+									>
+										Forgot password?
+									</a>
+								</div>
+
+								<input
+									type="password"
+									id="password"
+									name="password"
+									class="form-control bg-black text-primary-vault border-black-containers"
+									placeholder="•••••••••••••"
+								/>
+							</div>
+							<div class="form-check">
+								<input
+									type="checkbox"
+									id="remember"
+									class="form-check-input bg-transparent border-secondary-vault"
+								/>
+								<label
+									for="remember"
+									class="form-check-label text-secondary-vault fs-6"
+								>
+									Maintain Session
+								</label>
+							</div>
+							<button type="submit" class="btn btn-primary-ultraviolet w-100">
+								Enter
+							</button>
+						</form>
+						<div
+							class="w-100 pt-3 d-flex flex-column align-items-center border-top border-white border-opacity-10"
+						>
+							<p class="text-secondary-vault fs-6 mb-2">
+								New artifact curator?
+							</p>
+
+							<a
+								href="./register.html"
+								class="btn btn-sm text-uppercase fw-bold fs-6 text-secondary-vault border border-secondary-vault rounded-pill px-4"
+							>
+								Request Credentials
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

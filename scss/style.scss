@@ -1,29 +1,29 @@
 $theme-colors: (
-  "primary": #0d6efd,
-  "secondary": #6c757d,
-  "success": #198754,
-  "danger": #dc3545,
-  "warning": #ffc107,
-  "info": #0dcaf0,
-  "light": #f8f9fa,
-  "dark": #212529,
+	"primary": #0d6efd,
+	"secondary": #6c757d,
+	"success": #198754,
+	"danger": #dc3545,
+	"warning": #ffc107,
+	"info": #0dcaf0,
+	"light": #f8f9fa,
+	"dark": #212529,
 
-  "midnight": #09090d,
-  "ultraviolet": #9d50bb,
-  "secondary-ultraviolet": #b96cd8,
-  "black-containers": #12121a,
-  "primary-vault": #ffffff,
-  "secondary-vault": #acabaa,
-  "grey-container": #2a2a2b
+	"midnight": #09090d,
+	"ultraviolet": #9d50bb,
+	"secondary-ultraviolet": #b96cd8,
+	"black-containers": #12121a,
+	"primary-vault": #ffffff,
+	"secondary-vault": #acabaa,
+	"grey-container": #1b1b1b,
 );
 
 $font-sizes: (
-  1: 2.5rem,
-  2: 1.8rem,
-  3: 1.5rem,
-  4: 1.2rem,
-  5: 1rem,
-  6: 0.8rem,
+	1: 2.5rem,
+	2: 1.8rem,
+	3: 1.5rem,
+	4: 1.2rem,
+	5: 1rem,
+	6: 0.8rem,
 );
 
 // PADRÃO BOOTSTRAP
@@ -36,57 +36,59 @@ $font-sizes: (
 //   6: 1rem
 // );
 
-
-
 @import "mixins";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 .btn-primary-ultraviolet {
-  @include button(map-get($theme-colors, ultraviolet), map-get($theme-colors, secondary-ultraviolet));
+	@include button(
+		map-get($theme-colors, ultraviolet),
+		map-get($theme-colors, secondary-ultraviolet)
+	);
 }
 
 body {
-  background-color: map-get($theme-colors, "midnight");
-  font-family: 'Inter', sans-serif;
+	background-color: map-get($theme-colors, "midnight");
+	font-family: "Inter", sans-serif;
 }
 
-.bg-auth{
-  background: linear-gradient( #09090ddc,),
-  url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyurvukrdn6RYuw6dAIchObDzEwzw4qIJjVWg9_07aQsicrspQiPe8pqjtCK0cbjyK_6fc4l_NL1GCDCfd19hT_xQVR9i5k3wz2YlrYXiUkbDTMuOOHn7x03pKTlCIRZhUxGm9dtsiRGKMgkjakfa84qDsNmTFOGdd6HlhKfTheiJTF58-gILj68rL3SUDaJltJMlwqR--5EbHJrEnJso0IKb1VbnK9bjc7gh3bNuuuKv21k8VkZgTOHEoy1BCsy0LYC7ldGyzUGS3") no-repeat center / cover;
+.bg-auth {
+	background:
+		linear-gradient(#09090ddc),
+		url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyurvukrdn6RYuw6dAIchObDzEwzw4qIJjVWg9_07aQsicrspQiPe8pqjtCK0cbjyK_6fc4l_NL1GCDCfd19hT_xQVR9i5k3wz2YlrYXiUkbDTMuOOHn7x03pKTlCIRZhUxGm9dtsiRGKMgkjakfa84qDsNmTFOGdd6HlhKfTheiJTF58-gILj68rL3SUDaJltJMlwqR--5EbHJrEnJso0IKb1VbnK9bjc7gh3bNuuuKv21k8VkZgTOHEoy1BCsy0LYC7ldGyzUGS3")
+			no-repeat center / cover;
 }
 
 .bg-w-img {
-  background:
-    linear-gradient(rgb(11, 11, 11), rgba(9, 9, 13, 0.7), rgb(11, 11, 11)),
-    url("../assets/images/bg.png");
+	background:
+		linear-gradient(rgb(11, 11, 11), rgba(9, 9, 13, 0.7), rgb(11, 11, 11)),
+		url("../assets/images/bg.png");
 
-  background-size: cover;
-  background-position: center center;
+	background-size: cover;
+	background-position: center center;
 }
 
-.logo{
-  width: 300px;
+.logo {
+	width: 300px;
 }
 
 .form-control {
-  background-color: map-get($theme-colors, "secondary-vault");
-  border: 1px solid map-get($theme-colors, "secondary-vault");
-  color: #e7e5e4;
-  padding: 0.75rem 1rem;
+	background-color: map-get($theme-colors, "secondary-vault");
+	border: 1px solid map-get($theme-colors, "secondary-vault");
+	color: #e7e5e4;
+	padding: 0.75rem 1rem;
 }
 
 .form-control::placeholder {
-  color: map-get($theme-colors, "secondary-vault");
-  opacity: 1;
+	color: map-get($theme-colors, "secondary-vault");
+	opacity: 1;
 }
 
 .form-control:focus {
-  border-color: map-get($theme-colors, "ultraviolet");
-  box-shadow: 0 0 0 0.2rem rgba(157, 80, 187, 0.25);
+	border-color: map-get($theme-colors, "ultraviolet");
+	box-shadow: 0 0 0 0.2rem rgba(157, 80, 187, 0.25);
 }
 
-
 .form-check-input:checked {
-  background-color: map-get($theme-colors, "ultraviolet");
-  border-color: map-get($theme-colors, "ultraviolet");
+	background-color: map-get($theme-colors, "ultraviolet");
+	border-color: map-get($theme-colors, "ultraviolet");
 }
