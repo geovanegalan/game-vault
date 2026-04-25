@@ -92,3 +92,25 @@ body {
 	background-color: map-get($theme-colors, "ultraviolet");
 	border-color: map-get($theme-colors, "ultraviolet");
 }
+
+.news-carousel .carousel-item img {
+	height: 500px;
+	object-fit: cover;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.news-carousel .carousel-caption {
+	z-index: 2;
+	text-align: left;
+	left: 8%;
+	right: 8%;
+	bottom: 3rem;
+}
+
+.news-carousel {
+	border: 1px solid var(--gv-border);
+	border-radius: 16px;
+	overflow: hidden;
+	background-color: var(--gv-surface);
+}
