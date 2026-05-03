@@ -6,3 +6,12 @@
 	color: map-get($theme-colors, "primary-vault");
 	color: black;
 }
+
+@mixin button-secondary-vault {
+	width: 13rem;
+	height: 3.5rem;
+	font-weight: bolder;
+	color: white;
+	background: transparent;
+	border: 2px solid white;
+}

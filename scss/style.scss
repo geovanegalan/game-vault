@@ -39,6 +39,8 @@ $font-sizes: (
 @import "mixins";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+// BOTÕES
+
 .btn-primary-ultraviolet {
 	@include button(
 		map-get($theme-colors, ultraviolet),
@@ -46,10 +48,22 @@ $font-sizes: (
 	);
 }
 
+.btn-secondary-vault {
+	@include button-secondary-vault;
+}
+
+// CUSTOMIZAÇÃO GERAL
+
 body {
 	background-color: map-get($theme-colors, "midnight");
 	font-family: "Inter", sans-serif;
 }
+
+.logo {
+	width: 300px;
+}
+
+//LOGIN PAGE
 
 .bg-auth {
 	background:
@@ -58,6 +72,8 @@ body {
 			no-repeat center / cover;
 }
 
+//REGISTER PAGE
+
 .bg-w-img {
 	background:
 		linear-gradient(rgb(11, 11, 11), rgba(9, 9, 13, 0.7), rgb(11, 11, 11)),
@@ -65,10 +81,6 @@ body {
 
 	background-size: cover;
 	background-position: center center;
-}
-
-.logo {
-	width: 300px;
 }
 
 .form-control {
@@ -91,6 +103,30 @@ body {
 .form-check-input:checked {
 	background-color: map-get($theme-colors, "ultraviolet");
 	border-color: map-get($theme-colors, "ultraviolet");
+}
+
+//LANDING PAGE
+
+.hero-title {
+	font-size: 3.5rem;
+	color: map-get($theme-colors, primary-vault);
+	font-weight: bolder;
+	margin: 2rem 0;
+}
+
+.hero-glow {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 600px;
+	background: radial-gradient(
+		circle,
+		rgba(157, 80, 187, 0.15) 0%,
+		rgba(9, 9, 13, 0) 70%
+	);
+	z-index: -1;
 }
 
 .news-carousel .carousel-item img {
