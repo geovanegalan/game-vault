@@ -7,7 +7,10 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/pages/index.scss:assets/styles/index.css scss/pages/login.scss:assets/styles/login.css scss/pages/register.scss:assets/styles/register.css scss/pages/library.scss:assets/styles/library.css",
+    "sass:watch": "sass --watch scss/pages/index.scss:assets/styles/index.css scss/pages/login.scss:assets/styles/login.css scss/pages/register.scss:assets/styles/register.css scss/pages/library.scss:assets/styles/library.css",
+    "deploy": "gh-pages -d ."
   },
   "keywords": [],
   "author": "",

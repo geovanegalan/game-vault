@@ -1,0 +1,50 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../abstracts/global";
+
+// INDEX - LANDING PAGE
+
+.hero-title {
+	font-size: 3.5rem;
+	color: map-get($theme-colors, primary-vault);
+	font-weight: bolder;
+	margin: 2rem 0;
+}
+
+.hero-glow {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	height: 600px;
+	background: radial-gradient(
+		circle,
+		rgba(157, 80, 187, 0.15) 0%,
+		rgba(9, 9, 13, 0) 70%
+	);
+	z-index: -1;
+}
+
+.news-carousel .carousel-item img {
+	height: 500px;
+	object-fit: cover;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.news-carousel .carousel-caption {
+	z-index: 2;
+	text-align: left;
+	left: 8%;
+	right: 8%;
+	bottom: 3rem;
+}
+
+.news-carousel {
+	border: 1px solid var(--gv-border);
+	border-radius: 16px;
+	overflow: hidden;
+	background-color: var(--gv-surface);
+}

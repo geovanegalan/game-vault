@@ -3,22 +3,22 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Join your Vault</title>
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<title>Game Vault - Join the Vault</title>
+		<link rel="shortcut icon" href="../../../assets/images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="../../../assets/styles/register.css" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<div class="container d-flex flex-column min-vh-100">
 			<div class="row flex-grow-1">
 				<div
-					class="col-12 col-md-12 col-lg-7 text-white bg-light bg-w-img d-flex flex-column justify-content-between p-5 d-none d-md-flex"
+					class="col-12 col-md-12 col-lg-7 text-white bg-w-img d-flex flex-column justify-content-between p-5 d-none d-md-flex"
 				>
 					<div class="d-flex flex-column gap-4 align-items-start">
-						<img src="assets/images/logo_v2.png" class="logo" alt="#" />
+						<img src="../../../assets/images/logo_v2.png" class="logo" alt="Game Vault logo" />
 						<h1 class="fw-bold lh-sm mt-5">
 							Curation for the <br class="d-none d-md-block" /><span
 								class="text-ultraviolet"
@@ -36,16 +36,16 @@
 						<div class="d-flex flex-row justify-content-evenly gap-5">
 							<div>
 								<h3 class="text-uppercase fs-5 text-ultraviolet fw-bold">
-									zero clutter
+									Zero Clutter
 								</h3>
 								<p class="text-secondary-vault fs-6">
-									A minimalist interface that puts your game art from and
+									A minimalist interface that puts your game art front and
 									center.
 								</p>
 							</div>
 							<div>
 								<h3 class="text-uppercase fs-5 text-ultraviolet fw-bold">
-									private gallery
+									Private Gallery
 								</h3>
 								<p class="text-secondary-vault fs-6">
 									Your statistics and library remain exclusively under your
@@ -68,29 +68,29 @@
 						<div class="row g-3">
 							<div class="col-12 col-md-6">
 								<label
-									for=""
+									for="gamer-tag"
 									class="form-label text-uppercase fs-6 fw-bold text-secondary-vault"
 									>Gamer Tag
 								</label>
 								<input
 									type="text"
-									name="user-nick"
-									id="#"
+									name="gamer-tag"
+									id="gamer-tag"
 									class="form-control bg-black text-primary-vault border-black-containers"
 									placeholder="e.g. KavooKavala"
 								/>
 							</div>
 							<div class="col-12 col-md-6">
 								<label
-									for=""
+									for="full-name"
 									class="form-label text-uppercase fs-6 fw-bold text-secondary-vault"
 								>
 									Full Name
 								</label>
 								<input
 									type="text"
-									name=""
-									id=""
+									name="full-name"
+									id="full-name"
 									class="form-control bg-black text-primary-vault border-black-containers"
 									placeholder="John Winchester"
 								/>
@@ -98,19 +98,23 @@
 						</div>
 						<div class="mt-3">
 							<label
+								for="email"
 								class="form-label text-uppercase fs-6 fw-bold text-secondary-vault"
 							>
 								Email Address
 							</label>
 							<input
 								type="email"
-								class="form-control bg-black text-primary-vaultd border-black-containers"
+								id="email"
+								name="email"
+								class="form-control bg-black text-primary-vault border-black-containers"
 								placeholder="lcs@vault.com"
 							/>
 						</div>
 						<div class="mt-3">
 							<div class="d-flex justify-content-between">
 								<label
+									for="password"
 									class="form-label text-uppercase fs-6 fw-bold text-secondary-vault"
 								>
 									Access Key
@@ -121,24 +125,31 @@
 							</div>
 							<input
 								type="password"
+								id="password"
+								name="password"
 								class="form-control bg-black text-primary-vault border-black-containers"
 								placeholder="••••••••••••"
 							/>
 						</div>
 						<div class="form-check mt-3">
-							<input class="form-check-input" type="checkbox" />
-							<label class="form-check-label text-secondary-vault small">
+							<input
+								class="form-check-input"
+								type="checkbox"
+								id="terms"
+								name="terms"
+							/>
+							<label class="form-check-label text-secondary-vault small" for="terms">
 								I acknowledge the
-								<a class="text-ultraviolet">Vault Protocols</a> and agree to the
-								terms.
+								<a href="#" class="text-ultraviolet text-decoration-none">Vault Protocols</a>
+								and agree to the terms.
 							</label>
 						</div>
-						<button class="btn btn-primary-ultraviolet mt-5">
+						<button type="submit" class="btn btn-primary-ultraviolet mt-5">
 							Create Account
 						</button>
 						<p class="text-center text-secondary-vault mt-3 small">
 							Already a curator?
-							<a href="#" class="text-ultraviolet text-decoration-none"
+							<a href="../login/login.html" class="text-ultraviolet text-decoration-none"
 								>Sign In</a
 							>
 						</p>
@@ -152,23 +163,12 @@
 					&copy; 2026 GameVault. All Systems Operational.
 				</p>
 				<div class="d-flex gap-3">
-					<a
-						href="#"
-						class="text-secondary-vault text-decoration link-underline-ultraviolet fs-6"
-						>Legal</a
-					>
-					<a
-						href="#"
-						class="text-secondary-vault text-decoration link-underline-ultraviolet fs-6"
-						>Privacy Policy</a
-					>
-					<a
-						href="#"
-						class="text-secondary-vault text-decoration link-underline-ultraviolet fs-6"
-						>API Docs</a
-					>
+					<a href="#" class="text-secondary-vault text-decoration-none fs-6">Legal</a>
+					<a href="#" class="text-secondary-vault text-decoration-none fs-6">Privacy Policy</a>
+					<a href="#" class="text-secondary-vault text-decoration-none fs-6">API Docs</a>
 				</div>
 			</footer>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

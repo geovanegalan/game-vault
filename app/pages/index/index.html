@@ -4,31 +4,28 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Game Vault</title>
+		<link rel="stylesheet" href="../../../assets/styles/index.css" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap"
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
 			rel="stylesheet"
 		/>
 		<link
-			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
 			rel="stylesheet"
 		/>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
 	</head>
 	<body>
 		<nav
 			class="navbar navbar-expand-lg sticky-top bg-black border-bottom border-secondary-vault border-opacity-25 py-4"
 		>
 			<div class="container">
-				<a href="#" class="navbar-brand text-secondary-vault"
-					><img
-						src="./assets/images/logo_v2.png"
+				<a href="#" class="navbar-brand">
+					<img
+						src="../../../assets/images/logo_v2.png"
 						alt="Game Vault logo"
 						class="logo"
-				/></a>
+					/>
+				</a>
 				<button
 					class="navbar-toggler border-0 collapsed"
 					type="button"
@@ -41,7 +38,7 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div
-					class="collapse navbar-collapse text-secondary-vault justify-content-end"
+					class="collapse navbar-collapse justify-content-end"
 					id="navbarNav"
 				>
 					<ul class="navbar-nav align-items-center">
@@ -52,22 +49,24 @@
 							<a href="#" class="nav-link text-secondary-vault">Discover</a>
 						</li>
 						<li class="nav-item mx-2">
-							<a href="#" class="nav-link text-secondary-vault">Library</a>
+							<a href="../library/library.html" class="nav-link text-secondary-vault">Library</a>
 						</li>
 						<li class="nav-item mx-2">
-							<a href="/login.html" class=""
-								><span
+							<a href="../login/login.html">
+								<span
 									class="material-symbols-outlined align-middle text-secondary-vault"
 									style="font-size: 32px"
 									>account_circle</span
-								></a
-							>
+								>
+							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
+
 		<main>
+			<!-- HERO -->
 			<section class="container mt-5 mb-5">
 				<div class="hero-glow"></div>
 				<div class="row text-center d-flex justify-content-center">
@@ -75,14 +74,16 @@
 						<h1 class="hero-title">Discover, Collect, and Track Your Games</h1>
 						<p class="text-secondary-vault fs-4">
 							A minimalist sanctuary for your digital library. Review, rate, and
-							organiza your games with clinical precision.
+							organize your games with clinical precision.
 						</p>
 					</div>
 					<div
 						class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4 mt-4"
 					>
-						<!--ARRUMAR OS BOTÕES-->
-						<a href="#" class="btn btn-primary-ultraviolet" style="width: 13rem"
+						<a
+							href="../register/register.html"
+							class="btn btn-primary-ultraviolet"
+							style="width: 13rem"
 							>Start Your Vault</a
 						>
 						<a href="#" class="btn btn-secondary-vault text-center"
@@ -91,34 +92,38 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- STATS -->
 			<section
 				class="row text-center border bg-black-containers border-secondary-vault border-opacity-25 py-5"
 			>
 				<div class="col-lg-3 col-md-6 col-6">
 					<h3 class="text-ultraviolet fw-bold fs-1">84,203</h3>
 					<p class="text-secondary-vault fw-light fs-5 text-uppercase">
-						games indexed
+						Games Indexed
 					</p>
 				</div>
 				<div class="col-lg-3 col-md-6 col-6">
 					<h3 class="text-ultraviolet fw-bold fs-1">2.1M</h3>
 					<p class="text-secondary-vault fw-light fs-5 text-uppercase">
-						user ratings
+						User Ratings
 					</p>
 				</div>
 				<div class="col-lg-3 col-md-6 col-6">
 					<h3 class="text-ultraviolet fw-bold fs-1">15k</h3>
 					<p class="text-secondary-vault fw-light fs-5 text-uppercase">
-						curated lists
+						Curated Lists
 					</p>
 				</div>
 				<div class="col-lg-3 col-md-6 col-6">
 					<h3 class="text-ultraviolet fw-bold fs-1">120k</h3>
 					<p class="text-secondary-vault fw-light fs-5 text-uppercase">
-						Daily players
+						Daily Players
 					</p>
 				</div>
 			</section>
+
+			<!-- CAROUSEL -->
 			<section class="py-5 mt-5">
 				<div class="container">
 					<div class="row align-items-end">
@@ -134,7 +139,6 @@
 							>
 						</div>
 					</div>
-
 					<div class="news-carousel mt-5">
 						<div
 							class="carousel slide"
@@ -184,7 +188,7 @@
 										src="https://lh3.googleusercontent.com/aida-public/AB6AXuBotXynRGgAzM00pJMzTRDBd6rbtokUZScV4A3fcg7aOkfPuJLgS6sSINRMfYAVGcK0uI0gvHlvxtXV5JNhakIqSxRGeu9YYcnbCEYXioERO7D0JVzmW5AtCgYYiHlmLRgYacSVolNn34s2PyUuVF52kgX6dGQD1XehV5SfGenA4aunXrvEtqv4jcCRtT7g8VSDBtPamqqSRjlFhLMEnY9rbOkSkdDMbesRDKo-mpLQVExVdKiWzQ8YHvdxO0JjQtASFAumXZuggbFr"
 									/>
 									<div class="carousel-caption d-none d-md-block">
-										<h2>Wanderer's tale</h2>
+										<h2>Wanderer's Tale</h2>
 										<p>
 											Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 											Est, harum? Animi eum delectus quaerat aspernatur.
@@ -197,7 +201,7 @@
 										src="https://lh3.googleusercontent.com/aida-public/AB6AXuChCdBobSkls9yOhaOFOl0mJcvk8NQ2-pQwwJ7JLXJTi-B-u1GD_EFcre7icHg_DUd0-B1TV1XU2MVER_6m_BzOIVRthX3HDFT7ax_xiR20-PTB2XyNuuuJ6IazilkPP86Yw61uL9qfLDCMgQ6k9JSsqbYGBKOrdNHS3cW2zJ-k6UMEtEb29ud0g_8mNsX08gPV_DeltypDI74kvdthauumvYqOdh8G8AaMksimXFv8R5uBs3FzHut61LsEYISqlWoHAIkaMYzaZOYK"
 									/>
 									<div class="carousel-caption d-none d-md-block">
-										<h2>Echoes of asylum</h2>
+										<h2>Echoes of the Asylum</h2>
 										<p>
 											Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 											Est, harum? Animi eum delectus quaerat aspernatur.
@@ -211,10 +215,7 @@
 								data-bs-target="#carouselNews"
 								type="button"
 							>
-								<span
-									aria-hidden="true"
-									class="carousel-control-prev-icon"
-								></span>
+								<span aria-hidden="true" class="carousel-control-prev-icon"></span>
 								<span class="visually-hidden">Previous</span>
 							</button>
 							<button
@@ -223,23 +224,20 @@
 								data-bs-target="#carouselNews"
 								type="button"
 							>
-								<span
-									aria-hidden="true"
-									class="carousel-control-next-icon"
-								></span>
+								<span aria-hidden="true" class="carousel-control-next-icon"></span>
 								<span class="visually-hidden">Next</span>
 							</button>
 						</div>
 					</div>
 				</div>
 			</section>
+
+			<!-- FEATURES -->
 			<section class="py-5 my-5">
 				<div class="container">
 					<div class="row text-center">
 						<div class="col mb-5">
-							<h2 class="fw-bold fs-1 text-primary-vault">
-								Beyond the Library
-							</h2>
+							<h2 class="fw-bold fs-1 text-primary-vault">Beyond the Library</h2>
 							<p class="text-secondary-vault">
 								Sophisticated tools for the discerning collector.
 							</p>
@@ -255,7 +253,7 @@
 									>inventory_2</span
 								>
 								<h4 class="fw-bold fs-3 text-primary-vault my-3">
-									Deep cataloging
+									Deep Cataloging
 								</h4>
 								<p class="fs-4 text-secondary-vault">
 									Go beyond simple lists. Track editions, digital storefronts,
@@ -286,35 +284,27 @@
 				</div>
 			</section>
 		</main>
-		<footer
-			class="my-4 py-4 border-top border-secondary-vault border-opacity-25"
-		>
+
+		<footer class="my-4 py-4 border-top border-secondary-vault border-opacity-25">
 			<div class="container">
 				<div class="row text-center align-items-center">
 					<div class="col-md-6">
 						<h1 class="fs-1 text-secondary-vault">Game Vault</h1>
 						<p class="text-secondary-vault">
-							&copy; 2026 Game Vault. The digital Archive Project
+							&copy; 2026 Game Vault. The Digital Archive Project
 						</p>
 					</div>
-					<div class="col-md-6 text-center text-md-center">
-						<div
-							class="d-flex justify-content-center justify-content-md-end gap-4"
-						>
-							<a href="#" class="text-decoration-none text-secondary-vault"
-								>System Status</a
-							>
-							<a href="#" class="text-decoration-none text-secondary-vault"
-								>Privacy Policy</a
-							>
-							<a href="#" class="text-decoration-none text-secondary-vault"
-								>Termos of service</a
-							>
+					<div class="col-md-6 text-center text-md-end">
+						<div class="d-flex justify-content-center justify-content-md-end gap-4">
+							<a href="#" class="text-decoration-none text-secondary-vault">System Status</a>
+							<a href="#" class="text-decoration-none text-secondary-vault">Privacy Policy</a>
+							<a href="#" class="text-decoration-none text-secondary-vault">Terms of Service</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
+
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>

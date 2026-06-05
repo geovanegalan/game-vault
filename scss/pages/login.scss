@@ -1,0 +1,13 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../abstracts/global";
+
+// LOGIN PAGE
+
+.bg-auth {
+	background:
+		linear-gradient(#09090ddc),
+		url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyurvukrdn6RYuw6dAIchObDzEwzw4qIJjVWg9_07aQsicrspQiPe8pqjtCK0cbjyK_6fc4l_NL1GCDCfd19hT_xQVR9i5k3wz2YlrYXiUkbDTMuOOHn7x03pKTlCIRZhUxGm9dtsiRGKMgkjakfa84qDsNmTFOGdd6HlhKfTheiJTF58-gILj68rL3SUDaJltJMlwqR--5EbHJrEnJso0IKb1VbnK9bjc7gh3bNuuuKv21k8VkZgTOHEoy1BCsy0LYC7ldGyzUGS3")
+			no-repeat center / cover;
+}

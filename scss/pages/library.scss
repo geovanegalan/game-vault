@@ -1,169 +1,17 @@
-$theme-colors: (
-	"primary": #0d6efd,
-	"secondary": #6c757d,
-	"success": #198754,
-	"danger": #dc3545,
-	"warning": #ffc107,
-	"info": #0dcaf0,
-	"light": #f8f9fa,
-	"dark": #212529,
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../abstracts/global";
 
-	"midnight": #09090d,
-	"ultraviolet": #9d50bb,
-	"secondary-ultraviolet": #b96cd8,
-	"black-containers": #12121a,
-	"primary-vault": #ffffff,
-	"secondary-vault": #acabaa,
-	"grey-container": #1b1b1b,
-);
-
-$font-sizes: (
-	1: 2.5rem,
-	2: 1.8rem,
-	3: 1.5rem,
-	4: 1.2rem,
-	5: 1rem,
-	6: 0.8rem,
-);
-
-@import "mixins";
-@import "../node_modules/bootstrap/scss/bootstrap";
-
-// BOTÕES
-
-.btn-primary-ultraviolet {
-	@include button(
-		map-get($theme-colors, ultraviolet),
-		map-get($theme-colors, secondary-ultraviolet)
-	);
-}
-
-.btn-secondary-vault {
-	@include button-secondary-vault;
-}
-
-// CUSTOMIZAÇÃO GERAL
+// LIBRARY PAGE
 
 body {
-	background-color: map-get($theme-colors, "midnight");
-	font-family: "Inter", sans-serif;
-}
-
-.logo {
-	width: 300px;
-}
-
-//LOGIN PAGE
-
-.bg-auth {
-	background:
-		linear-gradient(#09090ddc),
-		url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyurvukrdn6RYuw6dAIchObDzEwzw4qIJjVWg9_07aQsicrspQiPe8pqjtCK0cbjyK_6fc4l_NL1GCDCfd19hT_xQVR9i5k3wz2YlrYXiUkbDTMuOOHn7x03pKTlCIRZhUxGm9dtsiRGKMgkjakfa84qDsNmTFOGdd6HlhKfTheiJTF58-gILj68rL3SUDaJltJMlwqR--5EbHJrEnJso0IKb1VbnK9bjc7gh3bNuuuKv21k8VkZgTOHEoy1BCsy0LYC7ldGyzUGS3")
-			no-repeat center / cover;
-}
-
-//REGISTER PAGE
-
-.bg-w-img {
-	background:
-		linear-gradient(rgb(11, 11, 11), rgba(9, 9, 13, 0.7), rgb(11, 11, 11)),
-		url("../assets/images/bg.png");
-
-	background-size: cover;
-	background-position: center center;
-}
-
-.form-control {
-	background-color: map-get($theme-colors, "secondary-vault");
-	border: 1px solid map-get($theme-colors, "secondary-vault");
-	color: #e7e5e4;
-	padding: 0.75rem 1rem;
-}
-
-.form-control::placeholder {
-	color: map-get($theme-colors, "secondary-vault");
-	opacity: 1;
-}
-
-.form-control:focus {
-	border-color: map-get($theme-colors, "ultraviolet");
-	box-shadow: 0 0 0 0.2rem rgba(157, 80, 187, 0.25);
-}
-
-.form-check-input:checked {
-	background-color: map-get($theme-colors, "ultraviolet");
-	border-color: map-get($theme-colors, "ultraviolet");
-}
-
-//LANDING PAGE
-
-.hero-title {
-	font-size: 3.5rem;
-	color: map-get($theme-colors, primary-vault);
-	font-weight: bolder;
-	margin: 2rem 0;
-}
-
-.hero-glow {
-	position: absolute;
-	top: 20%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 600px;
-	height: 600px;
-	background: radial-gradient(
-		circle,
-		rgba(157, 80, 187, 0.15) 0%,
-		rgba(9, 9, 13, 0) 70%
-	);
-	z-index: -1;
-}
-
-.news-carousel .carousel-item img {
-	height: 500px;
-	object-fit: cover;
-	width: 100%;
-	opacity: 0.8;
-}
-
-.news-carousel .carousel-caption {
-	z-index: 2;
-	text-align: left;
-	left: 8%;
-	right: 8%;
-	bottom: 3rem;
-}
-
-.news-carousel {
-	border: 1px solid var(--gv-border);
-	border-radius: 16px;
-	overflow: hidden;
-	background-color: var(--gv-surface);
-}
-
-//Library
-
-body {
-	font-family: "Inter", sans-serif;
-	background-color: var(--gv-bg);
-	color: var(--gv-text);
 	min-height: 100vh;
 	display: flex;
+	color: var(--gv-text);
 }
 
-.material-symbols-outlined {
-	font-variation-settings:
-		"FILL" 0,
-		"wght" 400,
-		"GRAD" 0,
-		"opsz" 24;
-}
-
-.material-symbols-outlined.filled {
-	font-variation-settings: "FILL" 1;
-}
-
-/* Sidebar Styles */
+/* Sidebar */
 .sidebar {
 	width: 80px;
 	background-color: var(--gv-surface);
@@ -199,11 +47,7 @@ body {
 	transition: all 0.2s;
 }
 
-.nav-icon:hover {
-	color: var(--gv-primary);
-	background-color: rgba(255, 255, 255, 0.05);
-}
-
+.nav-icon:hover,
 .nav-icon.active {
 	color: var(--gv-primary);
 	background-color: rgba(255, 255, 255, 0.05);
@@ -226,7 +70,7 @@ body {
 	min-height: 100vh;
 }
 
-/* Header Styles */
+/* Header */
 .top-header {
 	background-color: var(--gv-bg);
 	padding: 1.5rem 3rem;
@@ -276,7 +120,7 @@ body {
 	box-shadow: 0 0 0 0.2rem rgba(157, 80, 187, 0.25);
 }
 
-/* Library Content */
+/* Content Area */
 .content-area {
 	padding: 0 3rem 3rem 3rem;
 	flex-grow: 1;
@@ -290,6 +134,7 @@ body {
 	margin: 0;
 }
 
+/* Filter Nav */
 .filter-nav {
 	display: flex;
 	gap: 1.5rem;
@@ -385,10 +230,12 @@ body {
 	background-color: rgba(135, 28, 52, 0.8);
 	color: #ff97a3;
 }
+
 .badge-playing {
 	background-color: rgba(123, 47, 153, 0.8);
 	color: #f9d9ff;
 }
+
 .badge-completed {
 	background-color: rgba(249, 183, 201, 0.8);
 	color: #623442;
@@ -474,7 +321,7 @@ body {
 	text-underline-offset: 4px;
 }
 
-/* Modal Customization */
+/* Modal */
 .modal-content.obsidian-vault {
 	background-color: var(--gv-bg);
 	border: 1px solid var(--gv-border);
@@ -518,19 +365,4 @@ body {
 .btn-obsidian-add:hover {
 	background-color: var(--gv-primary);
 	color: var(--gv-bg);
-}
-
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-	width: 8px;
-}
-::-webkit-scrollbar-track {
-	background: var(--gv-bg);
-}
-::-webkit-scrollbar-thumb {
-	background: var(--gv-surface);
-	border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-	background: rgba(255, 255, 255, 0.2);
 }
