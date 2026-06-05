@@ -1,0 +1,341 @@
+<!doctype html>
+
+<html data-bs-theme="dark" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<title>Game Vault</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<aside class="sidebar">
+			<a class="sidebar-brand" href="#">GV</a>
+			<nav class="d-flex flex-column align-items-center w-100 px-2 gap-3">
+				<a class="nav-icon active" href="#">
+					<span class="material-symbols-outlined filled">library_books</span>
+					<span class="text">Library</span>
+				</a>
+				<a class="nav-icon" href="#">
+					<span class="material-symbols-outlined">explore</span>
+					<span class="text">Explore</span>
+				</a>
+				<a
+					class="nav-icon"
+					data-bs-target="#addArtifactModal"
+					data-bs-toggle="modal"
+					href="#"
+				>
+					<span class="material-symbols-outlined">add_circle</span>
+					<span class="text">Add Game</span>
+				</a>
+			</nav>
+			<div class="mt-auto d-flex flex-column align-items-center gap-4">
+				<button class="btn btn-link nav-icon p-0 m-0 border-0">
+					<span class="material-symbols-outlined">settings</span>
+				</button>
+				<div
+					class="rounded-circle overflow-hidden border border-secondary"
+					style="width: 32px; height: 32px"
+				>
+					<img
+						alt="User"
+						class="w-100 h-100"
+						src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_NJDbCKNIthkgRGBs-ItAAWFuFSJrFiDKpJK4AYP7DRsd3RATpfG6YUBj5CfAdFWhEFboq7FmSth6atqLjGHkEz-I8pKSpsodvxAP3faMWzR0dkKtPyB5b-qN4nMZaoBlAOYFDafKCWOsw4-dj3Fpe61QBdWUuajdzt8MyISmk4-KGJYls7uQf_LaDHnGUkUdLja1wnZo725TovWK7PwJO2XESNhYrFvoltXBbSlV_B5lh9pYBP2qfHn3xwtJhHlbo5iX6DGfM0j-"
+						style="object-fit: cover"
+					/>
+				</div>
+			</div>
+		</aside>
+		<main class="main-content">
+			<header class="top-header">
+				<div class="d-flex align-items-center w-100">
+					<h1 class="header-title">Game Vault</h1>
+					<div class="search-container">
+						<span class="material-symbols-outlined search-icon">search</span>
+						<input
+							class="search-input"
+							placeholder="Search the vault..."
+							type="text"
+						/>
+					</div>
+				</div>
+				<div class="d-flex align-items-center gap-4 ms-auto">
+					<span
+						class="text-uppercase text-muted"
+						style="font-size: 0.75rem; letter-spacing: 0.1em"
+						>Active Archives: 42</span
+					>
+					<button
+						class="btn btn-link p-0 text-decoration-none"
+						style="color: var(--gv-primary)"
+					>
+						<span class="material-symbols-outlined fs-4">account_circle</span>
+					</button>
+				</div>
+			</header>
+			<section class="content-area">
+				<div
+					class="d-flex justify-content-between align-items-baseline mb-5 mt-4"
+				>
+					<h2 class="section-title">Artifact Collection</h2>
+					<nav class="filter-nav">
+						<a class="filter-link active" href="#">All Games</a>
+						<a class="filter-link" href="#">Favorites</a>
+						<a class="filter-link" href="#">Backlog</a>
+					</nav>
+				</div>
+
+				<div
+					class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4"
+				>
+					<div class="col">
+						<button
+							class="add-artifact-btn h-100"
+							data-bs-target="#addArtifactModal"
+							data-bs-toggle="modal"
+						>
+							<span class="material-symbols-outlined icon">add_box</span>
+							<span class="text">Add Artifact</span>
+						</button>
+					</div>
+					<div class="col">
+						<div class="game-card">
+							<div class="card-img-container">
+								<img
+									alt="Elden Ring"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQPEhJSSKTptJ8PXs9nYK3ZUDwrgIzEC-dIpCrM6kdcr6JoAqWMx5AH2Wd0xVgT3L29dMXPLChYtNEwyRz0Ejer6LFs8zHlL8KzuBFH1L-_aazpGcvzNTmWR94EhUdbr7eyepPYd16_WDMd2pxrLJxYL3q7LxpWeC37yiVjkhWZMQwDQtpDZCpZweA541luc_GucGJg0rRa57EsuR5DYxt_rdcyVleYMfzknLUAP7gQqeE6ZCP_49Erv9JBB59SBn5hG3hyc2ugJn-"
+								/>
+								<span class="status-badge badge-backlog">Backlog</span>
+								<div class="play-overlay">
+									<span class="material-symbols-outlined play-icon"
+										>play_circle</span
+									>
+								</div>
+							</div>
+							<h3 class="game-title">Elden Ring</h3>
+							<p class="game-studio">FromSoftware</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="game-card">
+							<div class="card-img-container">
+								<img
+									alt="Stray"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYuFKqXhWHt1QrhukrD4kkh4SIpoPO6RDHxgBECHvDdLY3I79_wRSa6MR5UCFswszLspsk-ByD-fG52zr4HoPp31ngySxOf4CnEg7Fo6awIWsN5wz330ZMiwTY5ru-UOIS6EzSvBzAVPBebB9Wu2Jj8lSOSIbne97YPPOvaaGI3uiQrtwPHVESXKawNgPnGFp5BpPYSNg022FAZ51varFSd-9k41miBSg811pn4QIhFc7p43XVrZWvDUhIupOkSVUT-9J6ebBrL3_W"
+								/>
+								<span class="status-badge badge-playing">Playing</span>
+								<div class="play-overlay">
+									<span class="material-symbols-outlined play-icon"
+										>play_circle</span
+									>
+								</div>
+							</div>
+							<h3 class="game-title">Stray</h3>
+							<p class="game-studio">BlueTwelve Studio</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="game-card">
+							<div class="card-img-container">
+								<img
+									alt="Starfield"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6XYPDLbq-X1-N5jXQJ7UATBMUaJiqAzVeeHL8oO80-OqyVpTsmCcJOa12njNWHaeAiy3y_HNwcB532YeKOZmzLXZUjnqT_1FKjjsvn_XA7vrI8qhJlbRDv9LXrcusv5TcxU-aiPOUugVu0tbbejaJ27kwCpNidR-GFMMo4wo_2FQdIG0ZjuXhbe9_BiDWASqBocOs91u1Cep30aEDlvW61gGLP-sGh8Jjiae6Rc6NpMI-IrGIMeotdGtlxEmFb3QuhGpfhfhQDTir"
+								/>
+								<span class="status-badge badge-completed">Completed</span>
+								<div class="play-overlay">
+									<span class="material-symbols-outlined play-icon"
+										>play_circle</span
+									>
+								</div>
+							</div>
+							<h3 class="game-title">Starfield</h3>
+							<p class="game-studio">Bethesda</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="game-card">
+							<div class="card-img-container">
+								<img
+									alt="Forza Horizon 5"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuBO075xGKFvf6dvw3TNVHqv-e_jPBcW4kSHtr6hGmcH8maVJN2eFAy5keHOWD9CDqeL5m6DBQLnhmxRxQqiPh7I17odpZRlkOZuZMQpiu2-mEPWDaxRn-F0bX5CcVgY-k7YCIDYMs0jgXd7o2E04RUFGltgaGFafElw4mTShK4xB7N7IcGlKfS4LmmqsGZhkA-VYWAzYRHaeBIqKAhmk9rtz_xJxIyDDhHeJxILOMbfslvDeGoN0OC96-Np-NA1mp9mQAwPmrIXHnGp"
+								/>
+								<span class="status-badge badge-backlog">Backlog</span>
+								<div class="play-overlay">
+									<span class="material-symbols-outlined play-icon"
+										>play_circle</span
+									>
+								</div>
+							</div>
+							<h3 class="game-title">Forza Horizon 5</h3>
+							<p class="game-studio">Playground Games</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="game-card">
+							<div class="card-img-container">
+								<img
+									alt="Diablo IV"
+									src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5A2l4H5iyW7o9-JQzlDmnWtFdpQUFssb5lPAS2xgB9-MlwFxaPFBxI6SGyh8X6WbNVpqG0KTjJ-fVJX0Nb-pxy3kQPM2Vqc0-Zudqa6BRsHFfH3jWDzyP0szV4AOdDdmFWQnQpaMr8Pus77oHdixNbjH1mO-XLnkgFUZrFjlPe90-LC1V5KSnUtsLykXVPk42r7LVtDqdrnQYoY-0OgYgwJDtyMfs67sNMhi_NCV-1uzPyk35h3EdAf2Q-Pq0eDzHmIu0w1raUUR5"
+								/>
+								<span class="status-badge badge-playing">Playing</span>
+								<div class="play-overlay">
+									<span class="material-symbols-outlined play-icon"
+										>play_circle</span
+									>
+								</div>
+							</div>
+							<h3 class="game-title">Diablo IV</h3>
+							<p class="game-studio">Blizzard</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="footer">
+				<div class="footer-links">
+					<a href="#">System Status</a>
+					<a href="#">Privacy Policy</a>
+					<a href="#">Terms of Service</a>
+				</div>
+				<div>© 2024 Game Vault</div>
+			</footer>
+		</main>
+		<!-- Modal: Add Artifact -->
+		<div
+			aria-hidden="true"
+			aria-labelledby="addArtifactModalLabel"
+			class="modal fade"
+			id="addArtifactModal"
+			tabindex="-1"
+		>
+			<div class="modal-dialog modal-dialog-centered modal-lg">
+				<div class="modal-content obsidian-vault">
+					<div class="modal-header obsidian-vault border-bottom-0 pb-0">
+						<h5 class="modal-title" id="addArtifactModalLabel">Add to Vault</h5>
+						<button
+							aria-label="Close"
+							class="btn-close btn-close-white"
+							data-bs-dismiss="modal"
+							type="button"
+						></button>
+					</div>
+					<div class="modal-body p-4">
+						<!-- Search -->
+						<div class="search-container w-100 max-w-100 ms-0 mb-4">
+							<span class="material-symbols-outlined search-icon">search</span>
+							<input
+								class="search-input"
+								placeholder="Search for a game to add..."
+								type="text"
+							/>
+						</div>
+						<h6
+							class="text-uppercase text-muted fw-bold mb-3"
+							style="font-size: 0.65rem; letter-spacing: 0.1em"
+						>
+							Recent Discoveries
+						</h6>
+						<div class="row row-cols-2 row-cols-md-4 g-3">
+							<div class="col">
+								<div class="mini-game-card d-flex flex-column h-100">
+									<img
+										alt="Hollow Knight"
+										class="mini-game-img w-100"
+										src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiZ8kOqrvt5pPyxSVWJPDWUFxzDecLfNjT1jBiQ2gj6lVWifQzZ0VmUk26hePxp-UOwGIy_sgQnJSN5IV5Ysfh6HhUC6O_XoPYGWyupAjRvajms_vUDtTSKfln52_cchF8cVNyxlrdpDSiAQyUtzS4u7j2fslGtqCejBLKg66-_HP_4gGddtmdeBTGVyPr09S4B9AdxEUgid2rZqryskmoPmVbi-USdkhOoI8ypRvN6SMGMMFdZVeTGEUdxj6F-Y4iFzy6gMXn84IG"
+									/>
+									<h6
+										class="text-white mb-0 mt-1 text-truncate"
+										style="font-size: 0.75rem; font-weight: 700"
+									>
+										Hollow Knight
+									</h6>
+									<span
+										class="text-muted text-uppercase"
+										style="font-size: 0.5rem; letter-spacing: 0.1em"
+										>Team Cherry</span
+									>
+									<button class="btn btn-obsidian-add mt-auto">Add</button>
+								</div>
+							</div>
+							<div class="col">
+								<div class="mini-game-card d-flex flex-column h-100">
+									<img
+										alt="Celeste"
+										class="mini-game-img w-100"
+										src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdU40A5mRAOgF8WryprPVSNY64362gWJEYjSkDVL-fqNRI7DFZrrX9GwJv7CAmpmk3PL7U25I9ZtMh3O9fLQ16w5UGXFJVMsItJSvUFHh-MZzFHLCkdE_AptwxmXfexop1o5nCvz0vlkhrmxbUJ4e5jASsFgIK9ZwhREiQB9Y5aD6Kf8cGACin03JIQ2NPhwZk3yHx9nkE7iOQ_PP0Dl4Qm3MLRhuj_3EUZQh--EtHZs_Mlqvg6jeR6IuhL3KzTY99RNroURKIdq7W"
+									/>
+									<h6
+										class="text-white mb-0 mt-1 text-truncate"
+										style="font-size: 0.75rem; font-weight: 700"
+									>
+										Celeste
+									</h6>
+									<span
+										class="text-muted text-uppercase"
+										style="font-size: 0.5rem; letter-spacing: 0.1em"
+										>Maddy Makes Games</span
+									>
+									<button class="btn btn-obsidian-add mt-auto">Add</button>
+								</div>
+							</div>
+							<div class="col">
+								<div class="mini-game-card d-flex flex-column h-100">
+									<img
+										alt="Hades"
+										class="mini-game-img w-100"
+										src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO2OzVXKlblMxok5pZCZDYWlRqwtvwbfBU8SRepHo79benzaFrYgHPBca4zHKoTrJwhTZXsxW7GSeVfAfdzIUROE-pkV5XNQ9q-ZcMxUj4BrpVoMIaDGRpKPYm70VZlC_nvvhLdU5FHM3Pb_dEU3GcbIFThdWvEZMmck1rXqDa08h1BiMilxgBOZ9p6mfhvTj1BoVdUHRyIBdQuO5Mu6PWdvQe9gEd6_6CfbUqN5gKpVNji47GO1U_MIpqGLyK5GAfbalBaNpc0gdG"
+									/>
+									<h6
+										class="text-white mb-0 mt-1 text-truncate"
+										style="font-size: 0.75rem; font-weight: 700"
+									>
+										Hades
+									</h6>
+									<span
+										class="text-muted text-uppercase"
+										style="font-size: 0.5rem; letter-spacing: 0.1em"
+										>Supergiant Games</span
+									>
+									<button class="btn btn-obsidian-add mt-auto">Add</button>
+								</div>
+							</div>
+							<div class="col">
+								<div class="mini-game-card d-flex flex-column h-100">
+									<img
+										alt="Disco Elysium"
+										class="mini-game-img w-100"
+										src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtxCLFkmTZ2zuueKuMzo5gURALcwm3kzenDFTiPkl_EOUpkSXRyoWhdgxhkQ-uUOgfDJ4_JEoCqwqHYlehDhqx5oWs_qL5KlamGQr3NErcXgpv7LAWBE1agaNvl2H_EEF6_pkzht9c480Cu_zwSTyUexlp4KY8RXwBymsdFFkiNhQNr56alfXcQK-7_BDChhjET8vtN6KXPhjXbcCJpYVjJ_WV1EQZVR7T50JLt0ijk-ZJGLEt2s5IEMzjUQ3Os1utEgW3dxH9WRXR"
+									/>
+									<h6
+										class="text-white mb-0 mt-1 text-truncate"
+										style="font-size: 0.75rem; font-weight: 700"
+									>
+										Disco Elysium
+									</h6>
+									<span
+										class="text-muted text-uppercase"
+										style="font-size: 0.5rem; letter-spacing: 0.1em"
+										>ZA/UM</span
+									>
+									<button class="btn btn-obsidian-add mt-auto">Add</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
