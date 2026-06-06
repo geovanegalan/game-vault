@@ -20,11 +20,17 @@
 		>
 			<div class="container">
 				<a href="#" class="navbar-brand">
-					<img
-						src="../../../assets/images/logo_v2.png"
-						alt="Game Vault logo"
-						class="logo"
-					/>
+					<picture>
+						<source
+							srcset="../../../assets/images/logo_v2.webp"
+							type="image/webp"
+						/>
+						<img
+							src="../../../assets/images/logo_v2.png"
+							alt="Game Vault logo"
+							class="logo"
+						/>
+					</picture>
 				</a>
 				<button
 					class="navbar-toggler border-0 collapsed"
@@ -49,7 +55,11 @@
 							<a href="#" class="nav-link text-secondary-vault">Discover</a>
 						</li>
 						<li class="nav-item mx-2">
-							<a href="../library/library.html" class="nav-link text-secondary-vault">Library</a>
+							<a
+								href="../library/library.html"
+								class="nav-link text-secondary-vault"
+								>Library</a
+							>
 						</li>
 						<li class="nav-item mx-2">
 							<a href="../login/login.html">
@@ -80,15 +90,16 @@
 					<div
 						class="d-flex flex-column flex-sm-row justify-content-center align-items-center gap-4 mt-4"
 					>
-						<a
+						<button
 							href="../register/register.html"
 							class="btn btn-primary-ultraviolet"
 							style="width: 13rem"
-							>Start Your Vault</a
 						>
-						<a href="#" class="btn btn-secondary-vault text-center"
-							>Explore Archive</a
-						>
+							Start Your Vault
+						</button>
+						<button href="#" class="btn btn-secondary-vault text-center">
+							Explore Archive
+						</button>
 					</div>
 				</div>
 			</section>
@@ -169,12 +180,27 @@
 							</div>
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<img
-										alt="The Cyberpunk Odyssey"
-										src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCPvTH4go7TZK3u8i2wzLZKdHt2FouZPH94ZMhAMMz2WeRjjwr72gxLDKPuLYzi4R0SR0sgQfL9iGRPNcdhfBD5o6B9O4CiuiVy7X17y2jVw_oX0jakKJXy5g46ZOn94b0VU516_oGmvqtjpmhnBdxw7KEURnU4fCyxb9taW768shhF3d1RK3inqqTR51mlrToaJgmoqaWgcGNtkNqhQBXz5jx0Of96-dEVk6y4Ehziqfy8SGvGQwhhncVNndJpMkM5UtkKnYIYuNt"
-									/>
+									<picture>
+										<source
+											media="(max-width: 768px)"
+											srcset="
+												https://res.cloudinary.com/dljqnk9vt/image/upload/w_800,f_auto,q_auto/v1780766154/6_lixadd.png
+											"
+										/>
+										<source
+											media="(min-width: 769px)"
+											srcset="
+												https://res.cloudinary.com/dljqnk9vt/image/upload/w_1400,f_auto,q_auto/v1780766154/6_lixadd.png
+											"
+										/>
+										<img
+											src="https://res.cloudinary.com/dljqnk9vt/image/upload/w_1000,f_auto,q_auto/v1780766154/6_lixadd.png"
+											class="d-block w-100"
+											alt="Midnight terror"
+										/>
+									</picture>
 									<div class="carousel-caption d-none d-md-block">
-										<h2 class="text-warning">Cyberpunk 2077</h2>
+										<h2 class="">Cyberpunk 2077</h2>
 										<p>
 											Lorem ipsum dolor sit amet consectetur, adipisicing elit.
 											Aperiam eum hic maxime nesciunt ipsa? Repudiandae sunt
@@ -183,10 +209,25 @@
 									</div>
 								</div>
 								<div class="carousel-item">
-									<img
-										alt="Indie Hidden Gems"
-										src="https://lh3.googleusercontent.com/aida-public/AB6AXuBotXynRGgAzM00pJMzTRDBd6rbtokUZScV4A3fcg7aOkfPuJLgS6sSINRMfYAVGcK0uI0gvHlvxtXV5JNhakIqSxRGeu9YYcnbCEYXioERO7D0JVzmW5AtCgYYiHlmLRgYacSVolNn34s2PyUuVF52kgX6dGQD1XehV5SfGenA4aunXrvEtqv4jcCRtT7g8VSDBtPamqqSRjlFhLMEnY9rbOkSkdDMbesRDKo-mpLQVExVdKiWzQ8YHvdxO0JjQtASFAumXZuggbFr"
-									/>
+									<picture>
+										<source
+											media="(max-width: 768px)"
+											srcset="
+												https://res.cloudinary.com/dljqnk9vt/image/upload/w_800,f_auto,q_auto/v1780766154/5_b4cewy.png
+											"
+										/>
+										<source
+											media="(min-width: 769px)"
+											srcset="
+												https://res.cloudinary.com/dljqnk9vt/image/upload/w_1400,f_auto,q_auto/v1780766154/5_b4cewy.png
+											"
+										/>
+										<img
+											src="https://res.cloudinary.com/dljqnk9vt/image/upload/w_1000,f_auto,q_auto/v1780766154/5_b4cewy.png"
+											class="d-block w-100"
+											alt="Midnight terror"
+										/>
+									</picture>
 									<div class="carousel-caption d-none d-md-block">
 										<h2>Wanderer's Tale</h2>
 										<p>
@@ -196,10 +237,25 @@
 									</div>
 								</div>
 								<div class="carousel-item">
-									<img
-										alt="Midnight Horrors"
-										src="https://lh3.googleusercontent.com/aida-public/AB6AXuChCdBobSkls9yOhaOFOl0mJcvk8NQ2-pQwwJ7JLXJTi-B-u1GD_EFcre7icHg_DUd0-B1TV1XU2MVER_6m_BzOIVRthX3HDFT7ax_xiR20-PTB2XyNuuuJ6IazilkPP86Yw61uL9qfLDCMgQ6k9JSsqbYGBKOrdNHS3cW2zJ-k6UMEtEb29ud0g_8mNsX08gPV_DeltypDI74kvdthauumvYqOdh8G8AaMksimXFv8R5uBs3FzHut61LsEYISqlWoHAIkaMYzaZOYK"
-									/>
+									<picture>
+										<source
+											media="(max-width: 768px)"
+											srcset="
+												https://res.cloudinary.com/dljqnk9vt/image/upload/w_800,f_auto,q_auto/v1780766154/4_uspywh.png
+											"
+										/>
+										<source
+											media="(min-width: 769px)"
+											srcset="
+												https://res.cloudinary.com/dljqnk9vt/image/upload/w_1400,f_auto,q_auto/v1780766154/4_uspywh.png
+											"
+										/>
+										<img
+											src="https://res.cloudinary.com/dljqnk9vt/image/upload/w_1000,f_auto,q_auto/v1780766154/4_uspywh.png"
+											class="d-block w-100"
+											alt="Midnight terror"
+										/>
+									</picture>
 									<div class="carousel-caption d-none d-md-block">
 										<h2>Echoes of the Asylum</h2>
 										<p>
@@ -215,7 +271,10 @@
 								data-bs-target="#carouselNews"
 								type="button"
 							>
-								<span aria-hidden="true" class="carousel-control-prev-icon"></span>
+								<span
+									aria-hidden="true"
+									class="carousel-control-prev-icon"
+								></span>
 								<span class="visually-hidden">Previous</span>
 							</button>
 							<button
@@ -224,7 +283,10 @@
 								data-bs-target="#carouselNews"
 								type="button"
 							>
-								<span aria-hidden="true" class="carousel-control-next-icon"></span>
+								<span
+									aria-hidden="true"
+									class="carousel-control-next-icon"
+								></span>
 								<span class="visually-hidden">Next</span>
 							</button>
 						</div>
@@ -237,7 +299,9 @@
 				<div class="container">
 					<div class="row text-center">
 						<div class="col mb-5">
-							<h2 class="fw-bold fs-1 text-primary-vault">Beyond the Library</h2>
+							<h2 class="fw-bold fs-1 text-primary-vault">
+								Beyond the Library
+							</h2>
 							<p class="text-secondary-vault">
 								Sophisticated tools for the discerning collector.
 							</p>
@@ -285,7 +349,9 @@
 			</section>
 		</main>
 
-		<footer class="my-4 py-4 border-top border-secondary-vault border-opacity-25">
+		<footer
+			class="my-4 py-4 border-top border-secondary-vault border-opacity-25"
+		>
 			<div class="container">
 				<div class="row text-center align-items-center">
 					<div class="col-md-6">
@@ -295,10 +361,18 @@
 						</p>
 					</div>
 					<div class="col-md-6 text-center text-md-end">
-						<div class="d-flex justify-content-center justify-content-md-end gap-4">
-							<a href="#" class="text-decoration-none text-secondary-vault">System Status</a>
-							<a href="#" class="text-decoration-none text-secondary-vault">Privacy Policy</a>
-							<a href="#" class="text-decoration-none text-secondary-vault">Terms of Service</a>
+						<div
+							class="d-flex justify-content-center justify-content-md-end gap-4"
+						>
+							<a href="#" class="text-decoration-none text-secondary-vault"
+								>System Status</a
+							>
+							<a href="#" class="text-decoration-none text-secondary-vault"
+								>Privacy Policy</a
+							>
+							<a href="#" class="text-decoration-none text-secondary-vault"
+								>Terms of Service</a
+							>
 						</div>
 					</div>
 				</div>

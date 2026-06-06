@@ -22,6 +22,12 @@
     "uuid": "^13.0.0"
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "@eslint/css": "^0.14.1",
+    "@eslint/js": "^9.39.4",
+    "@eslint/json": "^0.14.0",
+    "eslint": "^9.39.4",
+    "gh-pages": "^6.3.0",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3"
   }
 }

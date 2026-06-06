@@ -1,3 +1,5 @@
 /node_modules
 assets/styles/
 .vscode/
+eslint.config.mjs
+.prettierrc
