@@ -1,0 +1,38 @@
+$theme-colors: (
+  "primary": #0d6efd,
+  "secondary": #6c757d,
+  "success": #198754,
+  "danger": #dc3545,
+  "warning": #ffc107,
+  "info": #0dcaf0,
+  "light": #f8f9fa,
+  "dark": #212529,
+
+  "midnight": #09090d,
+  "ultraviolet": #9d50bb,
+  "secondary-ultraviolet": #b96cd8,
+  "black-containers": #12121a,
+  "primary-vault": #ffffff,
+  "secondary-vault": #acabaa,
+  "grey-container": #1b1b1b,
+);
+
+$font-sizes: (
+  1: 2.5rem,
+  2: 1.8rem,
+  3: 1.5rem,
+  4: 1.2rem,
+  5: 1rem,
+  6: 0.8rem,
+);
+
+:root {
+  --step--2: clamp(0.6944rem, 0.6643rem + 0.1508vw, 0.8rem);
+  --step--1: clamp(0.8333rem, 0.7857rem + 0.2381vw, 1rem);
+  --step-0: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
+  --step-1: clamp(1.2rem, 1.0964rem + 0.5179vw, 1.5625rem);
+  --step-2: clamp(1.44rem, 1.2934rem + 0.733vw, 1.9531rem);
+  --step-3: clamp(1.728rem, 1.5242rem + 1.0192vw, 2.4414rem);
+  --step-4: clamp(2.0736rem, 1.7941rem + 1.3974vw, 3.0518rem);
+  --step-5: clamp(2.4883rem, 2.1094rem + 1.8948vw, 3.8147rem);
+}

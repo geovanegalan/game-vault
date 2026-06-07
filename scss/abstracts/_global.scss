@@ -1,0 +1,57 @@
+// ESTILOS GLOBAIS - aplicados em todas as páginas
+
+body {
+  background-color: map-get($theme-colors, "midnight");
+  font-family: "Inter", sans-serif;
+  font-size: var(--step-0);
+}
+
+.logo {
+  width: 15.625rem;
+}
+
+// BOTÕES CUSTOMIZADOS
+
+.btn-primary-ultraviolet {
+  @include button(
+    map-get($theme-colors, ultraviolet),
+    map-get($theme-colors, secondary-ultraviolet)
+  );
+}
+
+.btn-secondary-vault {
+  @include button-secondary-vault;
+}
+
+// MATERIAL ICONS
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.material-symbols-outlined.filled {
+  font-variation-settings: "FILL" 1;
+}
+
+// SCROLLBAR CUSTOMIZADA
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--gv-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gv-surface);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}

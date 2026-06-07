@@ -1,0 +1,33 @@
+{
+  "name": "game-vault",
+  "version": "1.0.0",
+  "description": "Desenvolver uma aplicação web responsiva que permita ao usuário buscar jogos em uma API pública e gerenciar uma lista personalizada de jogos, incluindo funcionalidades de cadastro, listagem e visualização de detalhes.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/pages/index.scss:assets/styles/index.css scss/pages/login.scss:assets/styles/login.css scss/pages/register.scss:assets/styles/register.css scss/pages/library.scss:assets/styles/library.css",
+    "sass:watch": "sass --watch scss/pages/index.scss:assets/styles/index.css scss/pages/login.scss:assets/styles/login.css scss/pages/register.scss:assets/styles/register.css scss/pages/library.scss:assets/styles/library.css",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "jquery": "^4.0.0",
+    "sass": "^1.98.0",
+    "uuid": "^13.0.0"
+  },
+  "devDependencies": {
+    "@eslint/css": "^0.14.1",
+    "@eslint/js": "^9.39.4",
+    "@eslint/json": "^0.14.0",
+    "eslint": "^9.39.4",
+    "gh-pages": "^6.3.0",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3"
+  }
+}
