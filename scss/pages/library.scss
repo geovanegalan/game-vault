@@ -8,19 +8,17 @@
 body {
   min-height: 100vh;
   display: flex;
-  color: var(--gv-text);
+  color: map-get($theme-colors, "primary-vault");
 }
 
-/* Sidebar */
+//SIDEBAR
 .sidebar {
-  width: 80px;
-  background-color: var(--gv-surface);
+  width: 5rem;
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
-  z-index: 1040;
-  border-right: 1px solid var(--gv-border);
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,7 +28,7 @@ body {
 .sidebar-brand {
   font-weight: 900;
   font-size: 1.25rem;
-  color: var(--gv-text);
+  color: map-get($theme-colors, "primary-vault");
   text-decoration: none;
   margin-bottom: 2rem;
 }
@@ -63,7 +61,7 @@ body {
 
 /* Main Content */
 .main-content {
-  margin-left: 80px;
+  margin-left: 5rem;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -90,7 +88,7 @@ body {
 
 .search-container {
   position: relative;
-  max-width: 400px;
+  max-width: 25rem;
   width: 100%;
   margin-left: 3rem;
 }
@@ -107,7 +105,7 @@ body {
 .search-input {
   background-color: var(--gv-surface);
   border: 1px solid var(--gv-border);
-  color: var(--gv-text);
+  color: map-get($theme-colors, "primary-vault");
   border-radius: 0.75rem;
   padding: 0.5rem 1rem 0.5rem 2.75rem;
   width: 100%;
@@ -158,7 +156,7 @@ body {
 }
 
 .filter-link:hover {
-  color: var(--gv-text);
+  color: map-get($theme-colors, "primary-vault");
 }
 
 .filter-link.active {
@@ -188,7 +186,7 @@ body {
 
 .game-card:hover .card-img-container {
   transform: scale(1.02);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.5);
 }
 
 .card-img-container img {
@@ -202,17 +200,12 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   margin: 0 0 0.25rem 0;
-  color: var(--gv-text);
+  color: map-get($theme-colors, "primary-vault");
   transition: color 0.2s;
-}
-
-.game-card:hover .game-title {
-  color: var(--gv-primary);
 }
 
 .game-studio {
   font-size: 0.65rem;
-  color: var(--gv-text-muted);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin: 0;
@@ -313,7 +306,7 @@ body {
 }
 
 .footer-links a:hover {
-  color: var(--gv-text);
+  color: map-get($theme-colors, "primary-vault");
   text-decoration: underline;
   text-underline-offset: 4px;
 }
@@ -362,4 +355,14 @@ body {
 .btn-obsidian-add:hover {
   background-color: var(--gv-primary);
   color: var(--gv-bg);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
 }
