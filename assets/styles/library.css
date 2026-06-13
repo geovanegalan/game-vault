@@ -12608,7 +12608,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: var(--gv-text-muted);
+  color: #ffffff;
   text-decoration: none;
   padding: 0.75rem;
   border-radius: 0.5rem;
@@ -12618,7 +12618,7 @@ body {
 
 .nav-icon:hover,
 .nav-icon.active {
-  color: var(--gv-primary);
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -12641,7 +12641,6 @@ body {
 
 /* Header */
 .top-header {
-  background-color: var(--gv-bg);
   padding: 1.5rem 3rem;
   position: sticky;
   top: 0;
@@ -12669,13 +12668,12 @@ body {
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  color: var(--gv-text-muted);
   font-size: 1.25rem;
 }
 
 .search-input {
-  background-color: var(--gv-surface);
-  border: 1px solid var(--gv-border);
+  background-color: #1b1b1b;
+  border: 1px solid #12121a;
   color: #ffffff;
   border-radius: 0.75rem;
   padding: 0.5rem 1rem 0.5rem 2.75rem;
@@ -12685,7 +12683,7 @@ body {
 
 .search-input:focus {
   outline: none;
-  border-color: var(--gv-primary);
+  border-color: #9d50bb;
   box-shadow: 0 0 0 0.2rem rgba(157, 80, 187, 0.25);
 }
 
@@ -12715,7 +12713,7 @@ body {
 }
 
 .filter-link {
-  color: var(--gv-text-muted);
+  color: #ffffff;
   text-decoration: none;
   font-size: 0.75rem;
   text-transform: uppercase;
@@ -12726,12 +12724,11 @@ body {
 }
 
 .filter-link:hover {
-  color: #ffffff;
+  color: #9d50bb;
 }
 
 .filter-link.active {
-  color: var(--gv-primary);
-  border-bottom: 2px solid var(--gv-primary);
+  color: #9d50bb;
 }
 
 /* Game Cards */
@@ -12746,10 +12743,9 @@ body {
   aspect-ratio: 3/4;
   border-radius: 0.75rem;
   overflow: hidden;
-  background-color: var(--gv-surface);
   margin-bottom: 0.75rem;
   transition: transform 0.3s, box-shadow 0.3s;
-  border: 1px solid var(--gv-border);
+  border: 1px solid #1b1b1b;
 }
 
 .game-card:hover .card-img-container {
@@ -12818,7 +12814,6 @@ body {
   border: 2px dashed rgba(255, 255, 255, 0.2);
   border-radius: 0.75rem;
   background: transparent;
-  color: var(--gv-text-muted);
   transition: all 0.3s;
   cursor: pointer;
   width: 100%;
@@ -12827,7 +12822,6 @@ body {
 .add-artifact-btn:hover {
   border-color: rgba(157, 80, 187, 0.5);
   background-color: rgba(255, 255, 255, 0.02);
-  color: var(--gv-primary);
 }
 
 .add-artifact-btn .icon {
@@ -12856,19 +12850,16 @@ body {
 
 /* Footer */
 .footer {
-  background-color: var(--gv-bg);
-  border-top: 1px solid var(--gv-border);
+  border-top: #acabaa;
   padding: 2rem 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--gv-text-muted);
   font-size: 0.875rem;
   margin-top: auto;
 }
 
 .footer-links a {
-  color: var(--gv-text-muted);
   text-decoration: none;
   margin-right: 2rem;
 }
@@ -12881,17 +12872,10 @@ body {
 
 /* Modal */
 .modal-content.obsidian-vault {
-  background-color: var(--gv-bg);
-  border: 1px solid var(--gv-border);
   border-radius: 0.75rem;
 }
 
-.modal-header.obsidian-vault {
-  border-bottom: 1px solid var(--gv-border);
-}
-
 .modal-title {
-  color: var(--gv-primary);
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -12910,8 +12894,6 @@ body {
 }
 
 .btn-obsidian-add {
-  background-color: var(--gv-surface);
-  color: var(--gv-primary);
   border: 1px solid rgba(157, 80, 187, 0.3);
   font-size: 0.65rem;
   font-weight: 700;
@@ -12921,8 +12903,7 @@ body {
 }
 
 .btn-obsidian-add:hover {
-  background-color: var(--gv-primary);
-  color: var(--gv-bg);
+  background-color: #9d50bb;
 }
 
 @media (max-width: 768px) {

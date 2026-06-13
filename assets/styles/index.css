@@ -12595,6 +12595,10 @@ body {
   z-index: -1;
 }
 
+.stats-numbers {
+  font-size: var(--step-3);
+}
+
 .news-carousel .carousel-item img {
   height: 31.25rem;
   object-fit: cover;
