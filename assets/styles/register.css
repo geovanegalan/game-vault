@@ -12613,4 +12613,20 @@ h1, .h1 {
   border-color: #9d50bb;
 }
 
+.password-strength {
+  font-size: 0.9rem;
+}
+
+.password-strength.fraca {
+  color: red;
+}
+
+.password-strength.media {
+  color: orange;
+}
+
+.password-strength.forte {
+  color: green;
+}
+
 /*# sourceMappingURL=register.css.map */

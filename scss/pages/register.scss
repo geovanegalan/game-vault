@@ -41,3 +41,19 @@ h1 {
   background-color: map-get($theme-colors, 'ultraviolet');
   border-color: map-get($theme-colors, 'ultraviolet');
 }
+
+.password-strength {
+  font-size: 0.9rem;
+}
+
+.password-strength.fraca {
+  color: red;
+}
+
+.password-strength.media {
+  color: orange;
+}
+
+.password-strength.forte {
+  color: green;
+}
