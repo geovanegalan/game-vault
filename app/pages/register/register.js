@@ -33,7 +33,6 @@ async function sentToServer(user) {
   try {
     await userService.registerUser(user);
 
-    // só chega aqui se o JSON Server salvou com sucesso
     let list = JSON.parse(localStorage.getItem('userList')) || [];
     list.push(user);
     localStorage.setItem('userList', JSON.stringify(list));
