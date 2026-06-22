@@ -20,6 +20,7 @@ import { userService } from './register.service.js';
         fullName: document.getElementById('full-name').value,
         email: document.getElementById('email').value,
         password: document.getElementById('password').value,
+        library: [],
       };
 
       sentToServer(user);
@@ -37,7 +38,7 @@ async function sentToServer(user) {
     list.push(user);
     localStorage.setItem('userList', JSON.stringify(list));
 
-    window.location.href = '/index.html';
+    // window.location.href = '/index.html';
   } catch (erro) {
     console.error(erro);
     Swal.fire({

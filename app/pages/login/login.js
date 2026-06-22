@@ -19,7 +19,14 @@ import { loginService } from './login.service.js';
       try {
         const user = await loginService.login(gamerTag, password);
 
-        localStorage.setItem('loggedUser', JSON.stringify(user));
+        localStorage.setItem(
+          'loggedUser',
+          JSON.stringify({
+            id: user.id,
+            tag: user.gamerTag,
+            email: user.email,
+          })
+        );
 
         window.location.href = '/index.html';
       } catch (error) {

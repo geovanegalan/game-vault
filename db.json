@@ -1,11 +1,20 @@
 {
   "users": [
     {
+      "gamerTag": "Jumamad",
+      "fullName": "Juma Beatriz",
+      "email": "juma@gmail.com",
+      "password": "Jumamad123*aa",
+      "library": [],
+      "id": 1
+    },
+    {
       "gamerTag": "jumamad",
       "fullName": "Juma Beatriz",
-      "email": "jumamad@gmail.com",
+      "email": "juma@gmail.com",
       "password": "Senha123*",
-      "id": "VHbsuTn"
+      "library": [],
+      "id": 2
     }
   ]
 }
