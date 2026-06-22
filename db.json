@@ -13,8 +13,71 @@
       "fullName": "Juma Beatriz",
       "email": "juma@gmail.com",
       "password": "Senha123*",
-      "library": [],
+      "library": [
+        {
+          "id": 326243,
+          "title": "Elden Ring",
+          "image": "https://media.rawg.io/media/games/b29/b294fdd866dcdb643e7bab370a552855.jpg",
+          "studio": "FromSoftware",
+          "status": "backlog"
+        },
+        {
+          "id": 324997,
+          "title": "Baldur's Gate III",
+          "image": "https://media.rawg.io/media/games/699/69907ecf13f172e9e144069769c3be73.jpg",
+          "studio": "Larian Studios",
+          "status": "backlog"
+        },
+        {
+          "id": 1004511,
+          "title": "Resident Evil 9: Requiem",
+          "image": "https://media.rawg.io/media/games/ed6/ed613937e113a4d43fa0db771e527a2f.jpg",
+          "studio": "Capcom",
+          "status": "backlog"
+        },
+        {
+          "studio": "Unknown",
+          "status": "backlog"
+        },
+        {
+          "id": 56183,
+          "title": "Resident Evil (2002)",
+          "image": "https://media.rawg.io/media/games/d24/d24ceb45b267f4b69b5d51c36c9a46db.jpg",
+          "studio": "Capcom",
+          "status": "backlog"
+        },
+        {
+          "id": 605674,
+          "title": "Lies Of P",
+          "image": "https://media.rawg.io/media/games/458/45838becd01e929b6be8b88d655cebfc.jpg",
+          "studio": "Round8 Studio",
+          "status": "backlog"
+        }
+      ],
       "id": 2
+    },
+    {
+      "gamerTag": "caym",
+      "fullName": "Geovane Galan ",
+      "email": "geovane@gmail.com",
+      "password": "Senha123*",
+      "library": [
+        {
+          "id": 10073,
+          "title": "Divinity: Original Sin 2",
+          "image": "https://media.rawg.io/media/games/424/424facd40f4eb1f2794fe4b4bb28a277.jpg",
+          "studio": "Larian Studios",
+          "status": "backlog"
+        },
+        {
+          "id": 795632,
+          "title": "Resident Evil 4",
+          "image": "https://media.rawg.io/media/games/51a/51a404b9918a0b19fc704a3ca248c69f.jpg",
+          "studio": "Capcom",
+          "status": "backlog"
+        }
+      ],
+      "id": 3
     }
   ]
 }

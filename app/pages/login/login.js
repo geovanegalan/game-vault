@@ -1,4 +1,4 @@
-import { loginService } from './login.service.js';
+import { loginService } from '../../services/login.service.js';
 
 (() => {
   const forms = document.querySelectorAll('.needs-validation');

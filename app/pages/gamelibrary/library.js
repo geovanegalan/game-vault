@@ -1,4 +1,4 @@
-import { getUsuarioLogadoCompleto } from '../../util/user.service.js';
+import { getUsuarioLogadoCompleto } from '../../services/user.service.js';
 
 async function renderLibrary() {
   const user = await getUsuarioLogadoCompleto();
@@ -8,7 +8,7 @@ async function renderLibrary() {
     return;
   }
 
-  const container = document.getElementById('libraryContainer');
+  const container = document.getElementById('library-container');
 
   container.innerHTML = `
     <div class="col">
@@ -28,17 +28,16 @@ async function renderLibrary() {
     col.innerHTML = `
       <div class="game-card">
         <div class="card-img-container">
-          <img src="${game.image}" alt="${game.title}" />
-          <span class="status-badge badge-${game.status}">
-            ${game.status}
-          </span>
-          <div class="play-overlay"></div>
+          <img src="${game.image}" alt="${game.title}" sizes="(max-width: 768px) 50vw, 25vw" />
+        <span class="status-badge badge-${game.status}">
+          ${game.status}
+        </span>
+        <div class="play-overlay"></div>
         </div>
-
         <h3 class="game-title">${game.title}</h3>
         <p class="game-studio">${game.studio}</p>
       </div>
-    `;
+`;
 
     container.appendChild(col);
   });
@@ -47,7 +46,7 @@ async function renderLibrary() {
 renderLibrary();
 
 //procurar os jogos
-import { searchGames } from '../../util/games.service.js';
+import { searchGames } from '../../services/games.service.js';
 
 const input = document.getElementById('gameSearchInput');
 const container = document.getElementById('searchResults');
@@ -93,14 +92,14 @@ input.addEventListener('keydown', async (e) => {
 });
 
 //adiciona o game a biblioteca
-import { addGameToLibrary } from './library.service.js';
+import { addGameToLibrary } from '../../services/library.service.js';
 
 document.addEventListener('click', async (e) => {
   if (!e.target.classList.contains('add-game')) return;
 
   const gameId = e.target.dataset.id;
 
-  const res = await fetch(`https://api.rawg.io/api/games/${gameId}?key=KEY`);
+  const res = await fetch(`https://api.rawg.io/api/games/${gameId}?key=`);
 
   const game = await res.json();
 
