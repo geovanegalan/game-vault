@@ -16,17 +16,14 @@ erDiagram
         string name
         string email
         string password
-        string createdAt
         string nickName
     }
 
     GAMES {
         int id PK
-        string name
-        string description
+        string title
         string image
-        string genre
-        float rating
+        string studio
     }
 
     FAVORITES {
@@ -53,18 +50,15 @@ Representa os usuários da aplicação, responsáveis por gerenciar sua bibliote
 - email: Email utilizado para autenticação (deve ser único).
 - password: Senha do usuário.
 - nickname: Nome de usuário único utilizado na aplicação.
-- createdAt: Data de criação da conta.
 
 ### 🎮 GAMES
 
 Representa os jogos consumidos de uma API externa.
 
 - id: Identificador único do jogo (fornecido pela API).
-- name: Nome do jogo.
-- description: Descrição do jogo.
+- title: Nome do jogo.
 - image: URL da imagem/capa do jogo.
-- genre: Gênero do jogo.
-- rating: Avaliação média do jogo.
+- studio: Empresa que desenvolveu o jogo.
 
 ### ⭐ FAVORITES
 
