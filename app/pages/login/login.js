@@ -30,7 +30,13 @@ import { loginService } from '../../services/login.service.js';
 
         window.location.href = '/index.html';
       } catch (error) {
-        alert(error.message);
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: `${error}`,
+          footer: '<a href="#">Why do I have this issue?</a>',
+        });
+        return;
       }
 
       form.classList.add('was-validated');

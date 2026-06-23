@@ -38,7 +38,7 @@ async function sentToServer(user) {
     list.push(user);
     localStorage.setItem('userList', JSON.stringify(list));
 
-    // window.location.href = '/index.html';
+    window.location.href = '/index.html';
   } catch (erro) {
     console.error(erro);
     Swal.fire({

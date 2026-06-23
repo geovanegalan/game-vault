@@ -5,7 +5,6 @@ export async function addGameToLibrary(game) {
     throw new Error('Usuário não está logado.');
   }
 
-  // CORREÇÃO: JSON.parse pra transformar a string em objeto
   const parsedUser = JSON.parse(loggedUser);
   const userId = parsedUser.id;
 
@@ -17,10 +16,10 @@ export async function addGameToLibrary(game) {
 
   const user = await userRes.json();
 
-  // verifica se o jogo já está na biblioteca
   const exists = (user.library || []).some((g) => g.id === game.id);
   if (exists) {
-    throw new Error('Este jogo já está na sua biblioteca.');
+    Swal.fire('Este jogo já está na sua biblioteca.');
+    return;
   }
 
   const newGame = {

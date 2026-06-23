@@ -1,14 +1,6 @@
 {
   "users": [
     {
-      "gamerTag": "Jumamad",
-      "fullName": "Juma Beatriz",
-      "email": "juma@gmail.com",
-      "password": "Jumamad123*aa",
-      "library": [],
-      "id": 1
-    },
-    {
       "gamerTag": "jumamad",
       "fullName": "Juma Beatriz",
       "email": "juma@gmail.com",
@@ -27,46 +19,21 @@
           "image": "https://media.rawg.io/media/games/699/69907ecf13f172e9e144069769c3be73.jpg",
           "studio": "Larian Studios",
           "status": "backlog"
-        },
-        {
-          "id": 1004511,
-          "title": "Resident Evil 9: Requiem",
-          "image": "https://media.rawg.io/media/games/ed6/ed613937e113a4d43fa0db771e527a2f.jpg",
-          "studio": "Capcom",
-          "status": "backlog"
-        },
-        {
-          "studio": "Unknown",
-          "status": "backlog"
-        },
-        {
-          "id": 56183,
-          "title": "Resident Evil (2002)",
-          "image": "https://media.rawg.io/media/games/d24/d24ceb45b267f4b69b5d51c36c9a46db.jpg",
-          "studio": "Capcom",
-          "status": "backlog"
-        },
-        {
-          "id": 605674,
-          "title": "Lies Of P",
-          "image": "https://media.rawg.io/media/games/458/45838becd01e929b6be8b88d655cebfc.jpg",
-          "studio": "Round8 Studio",
-          "status": "backlog"
         }
       ],
-      "id": 2
+      "id": 1
     },
     {
       "gamerTag": "caym",
-      "fullName": "Geovane Galan ",
+      "fullName": "Geovane Galan",
       "email": "geovane@gmail.com",
       "password": "Senha123*",
       "library": [
         {
-          "id": 10073,
-          "title": "Divinity: Original Sin 2",
-          "image": "https://media.rawg.io/media/games/424/424facd40f4eb1f2794fe4b4bb28a277.jpg",
-          "studio": "Larian Studios",
+          "id": 58813,
+          "title": "Resident Evil 2",
+          "image": "https://media.rawg.io/media/games/053/053fc543bf488349610f1ae2d0c1b51b.jpg",
+          "studio": "Capcom",
           "status": "backlog"
         },
         {
@@ -77,7 +44,7 @@
           "status": "backlog"
         }
       ],
-      "id": 3
+      "id": 2
     }
   ]
 }
