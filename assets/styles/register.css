@@ -12578,7 +12578,7 @@ body {
 }
 
 .bg-w-img {
-  background: linear-gradient(rgb(11, 11, 11), rgba(9, 9, 13, 0.7), rgb(11, 11, 11)), url("/game-vault/assets/resources/images/bg.webp");
+  background: linear-gradient(rgb(11, 11, 11), rgba(9, 9, 13, 0.7), rgb(11, 11, 11)), url("../../assets/resources/images/bg.webp");
   background-size: cover;
   background-position: center center;
 }
