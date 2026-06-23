@@ -1,4 +1,4 @@
-const API_KEY = '47ab4c38683f43268a80bd5829404ab6';
+const API_KEY = '';
 
 export async function searchGames(query) {
   const res = await fetch(
