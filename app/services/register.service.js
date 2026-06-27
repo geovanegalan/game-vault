@@ -2,7 +2,6 @@ const API_URL = 'http://localhost:3000/users';
 
 class UserService {
   async registerUser(newUser) {
-    console.log(newUser);
     const response = await fetch(API_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

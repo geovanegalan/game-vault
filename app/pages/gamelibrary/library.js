@@ -12,17 +12,6 @@ async function renderLibrary() {
 
   const container = document.getElementById('library-container');
 
-  container.innerHTML = `
-    <div class="col">
-      <button class="add-artifact-btn h-100"
-        data-bs-target="#addArtifactModal"
-        data-bs-toggle="modal">
-        <span class="material-symbols-outlined icon">add_box</span>
-        <span class="text">Add Game</span>
-      </button>
-    </div>
-  `;
-
   user.library.forEach((game) => {
     const col = document.createElement('div');
     col.classList.add('col');
@@ -30,7 +19,7 @@ async function renderLibrary() {
     col.innerHTML = `
       <div class="game-card">
         <div class="card-img-container">
-          <img src="${game.image}" alt="${game.title}" sizes="(max-width: 768px) 50vw, 25vw" />
+          <img src="${game.image}" alt="${game.title}"  />
         <span class="status-badge badge-${game.status}">
           ${game.status}
         </span>
@@ -49,8 +38,8 @@ renderLibrary();
 
 //procurar os jogos
 
-const input = document.getElementById('gameSearchInput');
-const container = document.getElementById('searchResults');
+const input = document.getElementById('game-search-input');
+const container = document.getElementById('search-results');
 
 input.addEventListener('keydown', async (e) => {
   if (e.key !== 'Enter') return;
@@ -99,7 +88,9 @@ document.addEventListener('click', async (e) => {
 
   const gameId = e.target.dataset.id;
 
-  const res = await fetch(`https://api.rawg.io/api/games/${gameId}?key=`);
+  const res = await fetch(
+    `https://api.rawg.io/api/games/${gameId}?key=47ab4c38683f43268a80bd5829404ab6`
+  );
 
   const game = await res.json();
 

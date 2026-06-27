@@ -21,10 +21,10 @@
           "status": "backlog"
         },
         {
-          "id": 3498,
-          "title": "Grand Theft Auto V",
-          "image": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg",
-          "studio": "Rockstar North",
+          "id": 795632,
+          "title": "Resident Evil 4",
+          "image": "https://media.rawg.io/media/games/51a/51a404b9918a0b19fc704a3ca248c69f.jpg",
+          "studio": "Capcom",
           "status": "backlog"
         }
       ],
@@ -55,6 +55,13 @@
           "title": "Elden Ring",
           "image": "https://media.rawg.io/media/games/b29/b294fdd866dcdb643e7bab370a552855.jpg",
           "studio": "FromSoftware",
+          "status": "backlog"
+        },
+        {
+          "id": 3498,
+          "title": "Grand Theft Auto V",
+          "image": "https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg",
+          "studio": "Rockstar North",
           "status": "backlog"
         }
       ],
