@@ -1,4 +1,6 @@
 import { getUsuarioLogadoCompleto } from '../../services/user.service.js';
+import { addGameToLibrary } from '../../services/library.service.js';
+import { searchGames } from '../../services/games.service.js';
 
 async function renderLibrary() {
   const user = await getUsuarioLogadoCompleto();
@@ -46,7 +48,6 @@ async function renderLibrary() {
 renderLibrary();
 
 //procurar os jogos
-import { searchGames } from '../../services/games.service.js';
 
 const input = document.getElementById('gameSearchInput');
 const container = document.getElementById('searchResults');
@@ -92,7 +93,6 @@ input.addEventListener('keydown', async (e) => {
 });
 
 //adiciona o game a biblioteca
-import { addGameToLibrary } from '../../services/library.service.js';
 
 document.addEventListener('click', async (e) => {
   if (!e.target.classList.contains('add-game')) return;
