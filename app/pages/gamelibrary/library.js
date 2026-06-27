@@ -6,7 +6,7 @@ async function renderLibrary() {
   const user = await getUsuarioLogadoCompleto();
 
   if (!user) {
-    window.location.href = '../../pages/gamelibrary/library.html';
+    window.location.href = '../../pages/login/login.html';
     return;
   }
 
