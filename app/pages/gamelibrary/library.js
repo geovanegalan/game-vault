@@ -5,10 +5,10 @@ import { searchGames } from '../../services/games.service.js';
 async function renderLibrary() {
   const user = await getUsuarioLogadoCompleto();
 
-  if (!user) {
-    window.location.href = '../../pages/login/login.html';
-    return;
-  }
+  // if (!user) {
+  //   window.location.href = '../../pages/login/login.html';
+  //   return;
+  // }
 
   const container = document.getElementById('library-container');
 

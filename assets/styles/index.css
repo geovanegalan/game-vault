@@ -1,7 +1,5 @@
 @charset "UTF-8";
 :root {
-  --step--2: clamp(0.6944rem, 0.6643rem + 0.1508vw, 0.8rem);
-  --step--1: clamp(0.8333rem, 0.7857rem + 0.2381vw, 1rem);
   --step-0: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
   --step-1: clamp(1.2rem, 1.0964rem + 0.5179vw, 1.5625rem);
   --step-2: clamp(1.44rem, 1.2934rem + 0.733vw, 1.9531rem);

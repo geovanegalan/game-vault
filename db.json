@@ -49,6 +49,13 @@
           "image": "https://media.rawg.io/media/games/51a/51a404b9918a0b19fc704a3ca248c69f.jpg",
           "studio": "Capcom",
           "status": "backlog"
+        },
+        {
+          "id": 326243,
+          "title": "Elden Ring",
+          "image": "https://media.rawg.io/media/games/b29/b294fdd866dcdb643e7bab370a552855.jpg",
+          "studio": "FromSoftware",
+          "status": "backlog"
         }
       ],
       "id": 2

@@ -50,11 +50,11 @@
         <div class="d-flex align-items-center w-100">
           <picture>
             <source
-              srcset="/game-vault/assets/resources/images/logo_v2.webp"
+              srcset="../../../assets/resources/images/logo_v2.webp"
               type="image/webp"
             />
             <img
-              src="/game-vault/assets/resources/images/logo_v2.png"
+              src="../../../assets/resources/images/logo_v2.png"
               alt="Game Vault logo"
               class="logo"
             />
@@ -68,26 +68,21 @@
             />
           </div>
         </div>
-      <div class="nav-item dropdown mx-2">
-            <a
-                href="#"
-                class="nav-link"
-                id="user-btn"
-                data-bs-toggle="dropdown"
-              >
-              <span
-                  class="material-symbols-outlined align-middle text-secondary-vault"
-                  style="font-size: 32px"
-                >
-                  account_circle
-              </span>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end" id="user-menu">
-              <li>
-                <button class="dropdown-item" id="logout-btn">Logout</button>
-              </li>
-            </ul>
-          </div>
+        <div class="nav-item dropdown ms-auto">
+          <a href="#" class="nav-link" id="user-btn" data-bs-toggle="dropdown">
+            <span
+              class="material-symbols-outlined align-middle text-secondary-vault"
+              style="font-size: 32px"
+            >
+              account_circle
+            </span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" id="user-menu">
+            <li>
+              <button class="dropdown-item" id="logout-btn">Logout</button>
+            </li>
+          </ul>
+        </div>
       </header>
 
       <section class="content-area">
@@ -106,7 +101,7 @@
           class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4"
           id="library-container"
         >
-          <!-- ADD GAME-->
+          <!-- ADD GAME -->
           <div class="col">
             <button
               class="add-artifact-btn h-100"
@@ -117,7 +112,7 @@
               <span class="text">Add Game</span>
             </button>
           </div>
-          
+        </div>
       </section>
 
       <footer class="footer">
@@ -136,7 +131,7 @@
       </footer>
     </main>
 
-    <!-- MODAL: Add Game-->
+    <!-- MODAL: Add Game -->
     <div
       aria-hidden="true"
       aria-labelledby="addArtifactModalLabel"
@@ -156,10 +151,8 @@
             ></button>
           </div>
           <div class="modal-body p-4">
-
             <div class="search-container w-100 ms-0 mb-4">
               <span class="material-symbols-outlined search-icon">search</span>
-
               <input
                 class="search-input"
                 id="gameSearchInput"
@@ -167,17 +160,18 @@
                 type="text"
               />
             </div>
-
-
             <h6
               class="text-uppercase text-muted fw-bold mb-3"
               style="font-size: 0.65rem; letter-spacing: 0.1em"
             >
               Recent Discoveries
             </h6>
-
-            <div class="row row-cols-2 row-cols-md-4 g-3" id="searchResults"></div>
-            
+            <div
+              class="row row-cols-2 row-cols-md-4 g-3"
+              id="searchResults"
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
 
