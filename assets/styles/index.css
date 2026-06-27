@@ -12596,7 +12596,7 @@ body {
 }
 
 .stats-numbers {
-  font-size: var(--step-3);
+  font-size: var(--step-2);
 }
 
 .news-carousel .carousel-item img {
@@ -12615,10 +12615,8 @@ body {
 }
 
 .news-carousel {
-  border: 0.0625rem solid var(--gv-border);
   border-radius: 1rem;
   overflow: hidden;
-  background-color: var(--gv-surface);
 }
 
 /*# sourceMappingURL=index.css.map */
