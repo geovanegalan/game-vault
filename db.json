@@ -26,6 +26,13 @@
           "image": "https://media.rawg.io/media/games/51a/51a404b9918a0b19fc704a3ca248c69f.jpg",
           "studio": "Capcom",
           "status": "backlog"
+        },
+        {
+          "id": 19369,
+          "title": "Call of Duty",
+          "image": "https://media.rawg.io/media/games/9c5/9c5bc0b6e67102bc96dcf1ba41509e42.jpg",
+          "studio": "Infinity Ward",
+          "status": "backlog"
         }
       ],
       "id": 1
@@ -66,6 +73,14 @@
         }
       ],
       "id": 2
+    },
+    {
+      "gamerTag": "jose_123",
+      "fullName": "Jose Carlos",
+      "email": "jose@gmail.com",
+      "password": "Senha123*",
+      "library": [],
+      "id": 3
     }
   ]
 }

@@ -88,9 +88,7 @@ document.addEventListener('click', async (e) => {
 
   const gameId = e.target.dataset.id;
 
-  const res = await fetch(
-    `https://api.rawg.io/api/games/${gameId}?key=47ab4c38683f43268a80bd5829404ab6`
-  );
+  const res = await fetch(`https://api.rawg.io/api/games/${gameId}?key=`);
 
   const game = await res.json();
 
